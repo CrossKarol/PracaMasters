@@ -1,4 +1,4 @@
-package configuration.appdemo;
+package karol.appdemo.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -35,12 +35,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     protected void configure(HttpSecurity httpSec) throws Exception {
-        httpSec.authorizeRequests()
+        httpSec
+                .authorizeRequests()
                 .antMatchers("/").permitAll()
+                .antMatchers("/index").permitAll()
                 .antMatchers("/login").permitAll()
                 .antMatchers("/register").permitAll()
                 .antMatchers("/adduser").permitAll()
-                .antMatchers("/admin").hasAuthority("ROLE_ADMIN")
+                .antMatchers("/activatelink/**").permitAll()
+//		.antMatchers("/admin").hasAuthority("ROLE_ADMIN")
                 .anyRequest().authenticated()
                 .and().csrf().disable()
                 .formLogin()
@@ -53,8 +56,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().exceptionHandling().accessDeniedPage("/denied");
     }
 
-    public void configure (WebSecurity webSec) throws Exception{
+    public void configure(WebSecurity webSec) throws Exception {
         webSec.ignoring()
                 .antMatchers("/resources/**", "/statics/**", "/css/**", "/js/**", "/images/**", "/incl/**");
     }
+
+
 }

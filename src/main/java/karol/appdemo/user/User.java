@@ -40,7 +40,8 @@ public class User {
     @Transient          //adnotacja ozncza że przy wszelkiego rodzaju insert, update to pole będzie omijane
     private String operacja;
     //  stworzenie składowej której nie mamy w bazie, hibernate nie bierze jej pod uwagę
-
+    @Transient
+    private int nrRoli;
 
     // Gettery i settery
     public int getId() {
@@ -97,6 +98,14 @@ public class User {
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
+    }
+
+    public int getNrRoli() {
+        return nrRoli;
+    }
+
+    public void setNrRoli(int nrRoli) {
+        this.nrRoli = nrRoli;
     }
 }
 

@@ -76,13 +76,19 @@
     </table>
 
     <table width="500" border="0" cellpadding="4" cellspacing="1" align="center">
+ 	<tr>
 
-    	<tr>
-    		<td align="center">
+    <td align="center">
+    			<input type="button" value="<s:message code="button.edycjaProfilu"/>"
+                onclick="window.location.href='${pageContext.request.contextPath}/editprofil'"/>
+    </td>
+
+    <td align="center">
     			<input type="button" value="<s:message code="button.zmianaHasla"/>"
-    					onclick="window.location.href='${pageContext.request.contextPath}/editpassword'"/>
-    		</td>
-    	</tr>
+                onclick="window.location.href='${pageContext.request.contextPath}/editpassword'"/>
+    </td>
+    </tr>
+
     </table>
 </body>
 </html>

@@ -53,9 +53,4 @@ public class UserServiceImpl implements UserService {
         userRepository.updateUserProfile(newName, newLastName, newEmail, id);
     }
 
-    @Override
-    public List<User> findAll() {
-        List<User> userList = userRepository.findAll();
-        return userList;
-    }
 }

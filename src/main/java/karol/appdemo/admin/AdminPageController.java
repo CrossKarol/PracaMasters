@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.xml.ws.RequestWrapper;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -29,6 +30,8 @@ public class AdminPageController {
 
     @Autowired
     private MessageSource messageSource;
+
+
 
     @GET
     @RequestMapping(value = "/admin")
@@ -50,16 +53,6 @@ public class AdminPageController {
         model.addAttribute("userList", userList);
         model.addAttribute("recordStartCounter", currentPage * ELEMENTS);
         return "admin/users";
-    }
-
-//  Pobranie listy userów
-    private Page<User> getAllUsersPageable(int page) {
-        Page<User> pages = adminService.findAll(PageRequest.of(page, ELEMENTS));
-        for(User users : pages) {
-            int numerRoli = users.getRoles().iterator().next().getId();
-            users.setNrRoli(numerRoli);
-        }
-        return pages;
     }
 
     @GET
@@ -88,6 +81,30 @@ public class AdminPageController {
         int czyActive = user.getActive();
         adminService.updateUser(id, nrRoli, czyActive);
         return "redirect:/admin/users/1";
+    }
+
+    @GET
+    @RequestMapping(value = "/admin/users/search/{searchWord}")
+    @Secured(value = "ROLE_ADMIN")
+    public String openSearchUsersPage(@PathVariable("searchWord") String searchWord, Model model) {
+        List<User> userList = adminService.findAllSearch(searchWord);
+        for(User users : userList) {
+            int numerRoli = users.getRoles().iterator().next().getId();
+            users.setNrRoli(numerRoli);
+        }
+        model.addAttribute("userList", userList);
+        return "admin/usersearch";
+    }
+
+
+    //  Pobranie listy userów
+    private Page<User> getAllUsersPageable(int page) {
+        Page<User> pages = adminService.findAll(PageRequest.of(page, ELEMENTS));
+        for(User users : pages) {
+            int numerRoli = users.getRoles().iterator().next().getId();
+            users.setNrRoli(numerRoli);
+        }
+        return pages;
     }
 
     // przygotowanie mapy ról

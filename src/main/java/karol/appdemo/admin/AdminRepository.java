@@ -9,6 +9,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository("adminRepository")
 public interface AdminRepository extends JpaRepository<User, Integer> {
 
@@ -22,9 +24,9 @@ public interface AdminRepository extends JpaRepository<User, Integer> {
     @Query(value = "UPDATE user_role r SET r.role_id = :roleId WHERE r.user_id= :id", nativeQuery = true)
     void updateRoleUser(@Param("roleId") int nrRoli, @Param("id") int id);
 
-//    @Query(value = "SELECT * FROM User u WHERE u.name LIKE %:param% OR u.last_name LIKE %:param% OR email LIKE %:param%", nativeQuery = true)
-//    Page<User> findAllSearch(@Param("param") String param, Pageable pageable);
-//
+    @Query(value = "SELECT * FROM User u WHERE u.name LIKE %:param% OR u.last_name LIKE %:param% OR email LIKE %:param%", nativeQuery = true)
+    List<User> findAllSearch(@Param("param") String param);
+
 //    @Modifying
 //    @Query(value = "DELETE FROM user_role WHERE user_id = :id", nativeQuery = true)
 //    void deleteUserFromUserRole(@Param("id") int id);

@@ -17,6 +17,18 @@ function changeTrBg(row){
 function defaultTrBg(row){
 	row.style.backgroundColor = "white";
 }
+function startSearch(){
+	var searchWord = document.getElementById('searchString').value;
+
+	if(searchWord.length < 3){
+		document.getElementById("errorSearch").innerHTML = "<s:message code="error.searchString.toShort"/>";
+		return false;
+	} else {
+		document.getElementById("errorSearch").innerHTML = "";
+		var searchLink = '${pageContext.request.contextPath}/admin/users/search/' + searchWord;
+		window.location.href=searchLink;
+	}
+}
 </script>
 </head>
 <body>
@@ -24,6 +36,12 @@ function defaultTrBg(row){
 <h1><s:message code="menu.users"/></h1>
 <c:set var="licznik" value="${recordStartCounter }"/>
 <div align="center">
+        <div align="right" style="width: 1000px; padding: 2px;">
+        		<input type="hidden" name="cp" id="cp" value="${currentPage}"/>
+        		<input type="text" id="searchString"/>&nbsp;&nbsp;<input type="button" value="<s:message code="button.search"/>"
+        				onclick="startSearch(0);"/><br/>
+        		<span id="errorSearch" style="color: red;"></span>
+        </div>
     <table width="1000" border="0" cellpadding="6" cellspacing="0">
         <tr bgcolor="#ffddcc">
             <td width="40" align = "center"></td>

@@ -47,11 +47,12 @@ function startSearch(){
         <tr bgcolor="#ffddcc">
             <td width="40" align = "center"></td>
             <td width="40" align = "center"><b><s:message code="admin.user.id"/></b></td>
-            <td width="200" align = "center"><b><s:message code="register.name"/></b></td>
-            <td width="200" align = "center"><b><s:message code="register.lastName"/></b></td>
-            <td width="220" align = "center"><b><s:message code="register.email"/></b></td>
-            <td width="90" align = "center"><b><s:message code="profil.czyAktywny"/></b></td>
-            <td width="200" align = "center"><b><s:message code="profil.rola"/></b></td>
+            <td width="190" align = "center"><b><s:message code="register.name"/></b></td>
+            <td width="190" align = "center"><b><s:message code="register.lastName"/></b></td>
+            <td width="200" align = "center"><b><s:message code="register.email"/></b></td>
+            <td width="100" align = "center"><b><s:message code="profil.czyAktywny"/></b></td>
+            <td width="190" align = "center"><b><s:message code="profil.rola"/></b></td>
+            <td width="50"></td>
         </tr>
 
         <c:forEach var="u" items="${userList }">
@@ -83,6 +84,18 @@ function startSearch(){
                     </c:otherwise>
                  </c:choose>
                  </td>
+                <td>
+                    <c:choose>
+                        <c:when test="${u.nrRoli == 1 }">
+                            <img src="/resources/images/deliconinact.png" width="16" height="16"/>
+                        </c:when>
+                        <c:otherwise>
+                            <a href="delete/${u.id }">
+                                    <img src="/resources/images/delicon.png" width="16" height="16" title="<s:message code="delete.user"/>"/>
+                            </a>
+                        </c:otherwise>
+                    </c:choose>
+                </td>
             </tr>
         </c:forEach>
     </table>

@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import java.io.File;
@@ -136,6 +137,17 @@ public class AdminPageController {
         }
         return "redirect:/admin/users/1";
     }
+
+    @DELETE
+    @RequestMapping(value = "/admin/users/delete/{id}")
+    @Secured(value = "ROLE_ADMIN")
+    public String deleteUser(@PathVariable("id") int id) {
+        LOG.debug("[WYWOŁANIE >>> AdminPageController.deleteUserById > PARAMETR: " + id);
+        adminService.deleteUserById(id);
+        return "redirect:/admin/users/1";
+    }
+
+
 
 
     //  Pobranie listy userów

@@ -16,4 +16,5 @@ public interface AdminService {
     List<User> findAllSearch(String param);
     void insertInBatch(List<User> userList);
     void saveAll(List<User> userList);
+    void deleteUserById(int id);
 }

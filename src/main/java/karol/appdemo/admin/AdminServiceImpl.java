@@ -87,4 +87,12 @@ public class AdminServiceImpl implements AdminService {
         adminRepository.saveAll(userList);
     }
 
+    @Override
+    public void deleteUserById(int id) {
+        LOG.debug("[WYWOŁANIE >>> AdminServiceImp.deleteUserById > PARAMETR: " + id);
+        LOG.debug("[WYWOŁANIE >>> AdmiinRepository.deleteUserFromUserRole > PARAMETR: " + id);
+        adminRepository.deleteUserFromUserRole(id);
+        LOG.debug("[WYWOŁANIE >>> AdminServiceImp.deleteUserFromUser > PARAMETR: " + id);
+        adminRepository.deleteUserFromUser(id);
+    }
 }

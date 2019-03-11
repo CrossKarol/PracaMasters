@@ -3,6 +3,8 @@ package karol.appdemo.admin;
 
 import karol.appdemo.user.User;
 import karol.appdemo.utilities.UserUtilities;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.data.domain.Page;
@@ -29,7 +31,8 @@ import java.util.Map;
 @Controller
 public class AdminPageController {
 
-    private static int ELEMENTS = 8;
+    private static final Logger LOG = LoggerFactory.getLogger(AdminPageController.class);
+    private static int ELEMENTS = 15;
 
     @Autowired
     private AdminService adminService;
@@ -50,6 +53,8 @@ public class AdminPageController {
     @RequestMapping(value = "/admin/users/{page}")
     @Secured(value = {"ROLE_ADMIN"})
     public String openAdminAllUsersPage(@PathVariable("page") int page, Model model) {
+
+        LOG.info("**** WYWOŁANO > openAdminAllUsersPage(" + page + ", "+ model + ")");
         Page<User> pages = getAllUsersPageable(page - 1);
         int totalPages = pages.getTotalPages();
         int currentPage = pages.getNumber();
@@ -124,9 +129,8 @@ public class AdminPageController {
             Files.write(fileAndPath, mFile.getBytes());
             file = new File(fileAndPath.toString());
             List<User> userList = UserUtilities.usersDataLoader(file);
-            for(User u : userList) {
-                System.out.println(u.getEmail() + " > " + u.getName());
-            }
+            adminService.saveAll(userList);
+            file.delete();
         }catch(Exception e) {
             e.printStackTrace();
         }

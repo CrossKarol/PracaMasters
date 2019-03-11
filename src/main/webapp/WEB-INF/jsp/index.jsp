@@ -15,5 +15,7 @@
 <%@include file="/WEB-INF/incl/menu.app"%>
 <h1>To jest strona główna</h1>
 <h2>Karol jest idiotą ale nic z tym nie zrobisz zanim to ogarnął mineło 3h ale to ogarnął xDD</h2>
+
+<h3 align="center"><c:out value="${message }" /></h3>
 </body>
 </html>

@@ -1,5 +1,7 @@
 package karol.appdemo.user;
 
+import org.springframework.stereotype.Controller;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Set;
@@ -45,6 +47,9 @@ public class User {
 
     @Transient
     private String newPassword;
+
+    @Column(name = "activation_code")
+    private String activationCode;
 
     // Gettery i settery
     public int getId() {
@@ -125,6 +130,14 @@ public class User {
 
     public void setNewPassword(String newPassword) {
         this.newPassword = newPassword;
+    }
+
+    public String getActivationCode() {
+        return activationCode;
+    }
+
+    public void setActivationCode(String activationCode) {
+        this.activationCode = activationCode;
     }
 }
 

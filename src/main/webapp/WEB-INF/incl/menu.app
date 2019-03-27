@@ -11,7 +11,7 @@
 				<a class="marginLeft"  href="/index"><s:message code="menu.news1"/></a>
 				<a class="marginLeft"  href="/index"><s:message code="menu.prof"/></a>
 				<a class="marginLeft"  href="/index"><s:message code="menu.save"/></a>
-				<a class="marginLeft"  href="/index"><s:message code="menu.account"/></a>
+				<a class="marginLeft"  href="/profil"><s:message code="menu.account"/></a>
 				<a class="marginLeft"  href="/index"><s:message code="menu.spotted1"/></a>
 				</sec:authorize>
 		</td>

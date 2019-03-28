@@ -1,6 +1,6 @@
 package karol.appdemo.user;
 
-import java.util.List;
+
 
 public interface UserService {
 
@@ -9,4 +9,8 @@ public interface UserService {
     public void updateUserPassword(String newPassword, String email);
     public void updateUserProfile(String newName, String newLastName, String newEmail, int id);
     public void updateUserActivation(int activeCode, String activationCode);
+
+    public String actuallUser();
+
+
 }

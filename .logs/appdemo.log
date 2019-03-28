@@ -1,338 +1,382 @@
-[2019-03-27 11:45:27 ] [org.hibernate.validator.internal.xml.config.ValidationXmlParser] [background-preinit] [120] [DEBUG] Trying to load META-INF/validation.xml for XML based Validator configuration.
-[2019-03-27 11:45:27 ] [org.hibernate.validator.internal.xml.config.ResourceLoaderHelper] [background-preinit] [60] [DEBUG] Trying to load META-INF/validation.xml via TCCL
-[2019-03-27 11:45:27 ] [org.hibernate.validator.internal.xml.config.ResourceLoaderHelper] [background-preinit] [66] [DEBUG] Trying to load META-INF/validation.xml via Hibernate Validator's class loader
-[2019-03-27 11:45:27 ] [org.hibernate.validator.internal.xml.config.ValidationXmlParser] [background-preinit] [127] [DEBUG] No META-INF/validation.xml found. Using annotation based configuration only.
-[2019-03-27 11:45:28 ] [org.springframework.boot.StartupInfoLogger] [main] [50] [INFO ] Starting AppdemoApplication on Cross-KarOL-PC with PID 4292 (C:\Users\Cross-KarOL\Desktop\appdemo\target\classes started by Cross-KarOL in C:\Users\Cross-KarOL\Desktop\appdemo)
-[2019-03-27 11:45:28 ] [org.springframework.boot.StartupInfoLogger] [main] [53] [DEBUG] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-[2019-03-27 11:45:28 ] [org.springframework.boot.SpringApplication] [main] [675] [INFO ] No active profile set, falling back to default profiles: default
-[2019-03-27 11:45:34 ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [126] [INFO ] Bootstrapping Spring Data repositories in DEFAULT mode.
-[2019-03-27 11:45:34 ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [182] [INFO ] Finished Spring Data repository scanning in 277ms. Found 3 repository interfaces.
-[2019-03-27 11:45:36 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd60091f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:45:36 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$660dd159] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:45:36 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:45:36 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@613bd219' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:45:36 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$8ae2740b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:45:36 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:45:36 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$4ce05651] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:45:38 ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [90] [INFO ] Tomcat initialized with port(s): 8080 (http)
-[2019-03-27 11:45:38 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
-[2019-03-27 11:45:38 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
-[2019-03-27 11:45:38 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.16]
-[2019-03-27 11:45:38 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-10.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\PuTTY\;C:\apache-maven-3.6.0\bin;.]
-[2019-03-27 11:45:40 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-[2019-03-27 11:45:40 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
-[2019-03-27 11:45:40 ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [288] [DEBUG] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[2019-03-27 11:45:40 ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [296] [INFO ] Root WebApplicationContext: initialization completed in 11026 ms
-[2019-03-27 11:45:41 ] [com.zaxxer.hikari.HikariDataSource] [main] [110] [INFO ] HikariPool-1 - Starting...
-[2019-03-27 11:45:43 ] [com.zaxxer.hikari.HikariDataSource] [main] [123] [INFO ] HikariPool-1 - Start completed.
-[2019-03-27 11:45:47 ] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [main] [415] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2019-03-27 11:45:50 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/resources/**'], []
-[2019-03-27 11:45:50 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/statics/**'], []
-[2019-03-27 11:45:50 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/static/css/**'], []
-[2019-03-27 11:45:50 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/js/**'], []
-[2019-03-27 11:45:50 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/images/**'], []
-[2019-03-27 11:45:50 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/incl/**'], []
-[2019-03-27 11:45:51 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bf49ae8, org.springframework.security.web.context.SecurityContextPersistenceFilter@629338df, org.springframework.security.web.header.HeaderWriterFilter@4ae2c6cc, org.springframework.security.web.authentication.logout.LogoutFilter@2d7340bc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a087d30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d32751b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43c58f52, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33df4124, org.springframework.security.web.session.SessionManagementFilter@273343d5, org.springframework.security.web.access.ExceptionTranslationFilter@73c4bcbe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@625af179]
-[2019-03-27 11:45:51 ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [main] [139] [DEBUG] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-[2019-03-27 11:45:51 ] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [171] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
-[2019-03-27 11:45:51 ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] [main] [622] [DEBUG] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[2019-03-27 11:45:51 ] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration] [main] [236] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2019-03-27 11:45:51 ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping] [main] [350] [DEBUG] 19 mappings in 'requestMappingHandlerMapping'
-[2019-03-27 11:45:51 ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [main] [139] [DEBUG] Patterns [/webjars/**, /resources/**] in 'resourceHandlerMapping'
-[2019-03-27 11:45:51 ] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [main] [302] [DEBUG] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[2019-03-27 11:45:52 ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [main] [61] [INFO ] Adding welcome page template: index
-[2019-03-27 11:45:53 ] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] [main] [86] [INFO ] 
-
-Using generated security password: 92ce1413-2dba-4a08-9e42-763d11b32239
-
-[2019-03-27 11:45:53 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8080"]
-[2019-03-27 11:45:53 ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [204] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
-[2019-03-27 11:45:53 ] [org.springframework.boot.StartupInfoLogger] [main] [59] [INFO ] Started AppdemoApplication in 27.437 seconds (JVM running for 58.284)
-[2019-03-27 11:46:15 ] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-9] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2019-03-27 11:46:15 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9] [524] [INFO ] Initializing Servlet 'dispatcherServlet'
-[2019-03-27 11:46:15 ] [org.springframework.web.servlet.DispatcherServlet] [http-nio-8080-exec-9] [525] [DEBUG] Detected StandardServletMultipartResolver
-[2019-03-27 11:46:15 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9] [541] [DEBUG] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[2019-03-27 11:46:15 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9] [546] [INFO ] Completed initialization in 74 ms
-[2019-03-27 11:46:15 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-9] [90] [DEBUG] GET "/", parameters={}
-[2019-03-27 11:46:15 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-9] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
-[2019-03-27 11:46:15 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-9] [19] [INFO ] **** WYWO£ANO > showMainPage()
-[2019-03-27 11:46:15 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-9] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:46:15 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-9] [309] [DEBUG] View name 'index', model {}
-[2019-03-27 11:46:15 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-9] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
-[2019-03-27 11:46:18 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:46:18 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-10] [90] [DEBUG] GET "/resources/css/style.css", parameters={}
-[2019-03-27 11:46:18 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-10] [420] [DEBUG] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[2019-03-27 11:46:18 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:46:19 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-8] [90] [DEBUG] GET "/", parameters={}
-[2019-03-27 11:46:19 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-8] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
-[2019-03-27 11:46:19 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-8] [19] [INFO ] **** WYWO£ANO > showMainPage()
-[2019-03-27 11:46:19 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-8] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:46:19 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-8] [309] [DEBUG] View name 'index', model {}
-[2019-03-27 11:46:19 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-8] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
-[2019-03-27 11:46:19 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-8] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:46:23 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-3] [90] [DEBUG] GET "/login", parameters={}
-[2019-03-27 11:46:23 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-3] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
-[2019-03-27 11:46:23 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-3] [347] [DEBUG] Selected '*/*;q=0.8' given [image/webp, image/apng, image/*, */*;q=0.8]
-[2019-03-27 11:46:23 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-3] [309] [DEBUG] View name 'login', model {}
-[2019-03-27 11:46:23 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-3] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
-[2019-03-27 11:46:24 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-3] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:46:26 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-5] [90] [DEBUG] GET "/login", parameters={}
-[2019-03-27 11:46:26 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-5] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
-[2019-03-27 11:46:26 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-5] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:46:26 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-5] [309] [DEBUG] View name 'login', model {}
-[2019-03-27 11:46:26 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-5] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
-[2019-03-27 11:46:26 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:46:26 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-4] [90] [DEBUG] GET "/resources/css/style.css", parameters={}
-[2019-03-27 11:46:26 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-4] [420] [DEBUG] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[2019-03-27 11:46:26 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-4] [1130] [DEBUG] Completed 304 NOT_MODIFIED
-[2019-03-27 11:46:26 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-1] [90] [DEBUG] GET "/login", parameters={}
-[2019-03-27 11:46:26 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-1] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
-[2019-03-27 11:46:26 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-1] [347] [DEBUG] Selected '*/*;q=0.8' given [image/webp, image/apng, image/*, */*;q=0.8]
-[2019-03-27 11:46:26 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-1] [309] [DEBUG] View name 'login', model {}
-[2019-03-27 11:46:26 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-1] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
-[2019-03-27 11:46:26 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:46:28 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-9] [90] [DEBUG] GET "/", parameters={}
-[2019-03-27 11:46:28 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-9] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
-[2019-03-27 11:46:28 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-9] [19] [INFO ] **** WYWO£ANO > showMainPage()
-[2019-03-27 11:46:28 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-9] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:46:28 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-9] [309] [DEBUG] View name 'index', model {}
-[2019-03-27 11:46:28 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-9] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
-[2019-03-27 11:46:28 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:46:28 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-8] [90] [DEBUG] GET "/login", parameters={}
-[2019-03-27 11:46:28 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-8] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
-[2019-03-27 11:46:28 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-8] [347] [DEBUG] Selected '*/*;q=0.8' given [image/webp, image/apng, image/*, */*;q=0.8]
-[2019-03-27 11:46:28 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-8] [309] [DEBUG] View name 'login', model {}
-[2019-03-27 11:46:28 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-8] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
-[2019-03-27 11:46:28 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-8] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:46:56 ] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [Thread-3] [208] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
-[2019-03-27 11:46:56 ] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [Thread-3] [597] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
-[2019-03-27 11:46:56 ] [com.zaxxer.hikari.HikariDataSource] [Thread-3] [350] [INFO ] HikariPool-1 - Shutdown initiated...
-[2019-03-27 11:46:56 ] [com.zaxxer.hikari.HikariDataSource] [Thread-3] [352] [INFO ] HikariPool-1 - Shutdown completed.
-[2019-03-27 11:47:08 ] [org.springframework.boot.StartupInfoLogger] [main] [50] [INFO ] Starting AppdemoApplication on Cross-KarOL-PC with PID 5444 (C:\Users\Cross-KarOL\Desktop\appdemo\target\classes started by Cross-KarOL in C:\Users\Cross-KarOL\Desktop\appdemo)
-[2019-03-27 11:47:08 ] [org.springframework.boot.StartupInfoLogger] [main] [53] [DEBUG] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-[2019-03-27 11:47:08 ] [org.springframework.boot.SpringApplication] [main] [675] [INFO ] No active profile set, falling back to default profiles: default
-[2019-03-27 11:47:10 ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [126] [INFO ] Bootstrapping Spring Data repositories in DEFAULT mode.
-[2019-03-27 11:47:10 ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [182] [INFO ] Finished Spring Data repository scanning in 148ms. Found 3 repository interfaces.
-[2019-03-27 11:47:11 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee0420d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:47:11 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$86b1e90b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:47:11 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:47:11 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@58b595cb' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:47:11 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$ab868bbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:47:11 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:47:11 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$6d846e03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:47:12 ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [90] [INFO ] Tomcat initialized with port(s): 8080 (http)
-[2019-03-27 11:47:12 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
-[2019-03-27 11:47:12 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
-[2019-03-27 11:47:12 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.16]
-[2019-03-27 11:47:12 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-10.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\PuTTY\;C:\apache-maven-3.6.0\bin;.]
-[2019-03-27 11:47:13 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-[2019-03-27 11:47:13 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
-[2019-03-27 11:47:13 ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [288] [DEBUG] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[2019-03-27 11:47:13 ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [296] [INFO ] Root WebApplicationContext: initialization completed in 4731 ms
-[2019-03-27 11:47:13 ] [com.zaxxer.hikari.HikariDataSource] [main] [110] [INFO ] HikariPool-1 - Starting...
-[2019-03-27 11:47:14 ] [com.zaxxer.hikari.HikariDataSource] [main] [123] [INFO ] HikariPool-1 - Start completed.
-[2019-03-27 11:47:16 ] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [main] [415] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2019-03-27 11:47:19 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/resources/**'], []
-[2019-03-27 11:47:19 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/statics/**'], []
-[2019-03-27 11:47:19 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/static/css/**'], []
-[2019-03-27 11:47:19 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/js/**'], []
-[2019-03-27 11:47:19 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/images/**'], []
-[2019-03-27 11:47:19 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/incl/**'], []
-[2019-03-27 11:47:19 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5263ec2f, org.springframework.security.web.context.SecurityContextPersistenceFilter@19800cb4, org.springframework.security.web.header.HeaderWriterFilter@702a495b, org.springframework.security.web.authentication.logout.LogoutFilter@6db17d1c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@379cb821, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@707d755f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@601632fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47096729, org.springframework.security.web.session.SessionManagementFilter@737f63d6, org.springframework.security.web.access.ExceptionTranslationFilter@33d38932, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30919ffa]
-[2019-03-27 11:47:19 ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [main] [139] [DEBUG] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-[2019-03-27 11:47:19 ] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [171] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
-[2019-03-27 11:47:19 ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] [main] [622] [DEBUG] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[2019-03-27 11:47:20 ] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration] [main] [236] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2019-03-27 11:47:20 ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping] [main] [350] [DEBUG] 19 mappings in 'requestMappingHandlerMapping'
-[2019-03-27 11:47:20 ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [main] [139] [DEBUG] Patterns [/webjars/**, /resources/**] in 'resourceHandlerMapping'
-[2019-03-27 11:47:20 ] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [main] [302] [DEBUG] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[2019-03-27 11:47:20 ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [main] [61] [INFO ] Adding welcome page template: index
-[2019-03-27 11:47:21 ] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] [main] [86] [INFO ] 
-
-Using generated security password: c55f2bcb-9ef3-4d9d-b03b-1ed7f705b2be
-
-[2019-03-27 11:47:21 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8080"]
-[2019-03-27 11:47:21 ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [204] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
-[2019-03-27 11:47:21 ] [org.springframework.boot.StartupInfoLogger] [main] [59] [INFO ] Started AppdemoApplication in 13.432 seconds (JVM running for 20.557)
-[2019-03-27 11:48:27 ] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [Thread-3] [208] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
-[2019-03-27 11:48:27 ] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [Thread-3] [597] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
-[2019-03-27 11:48:27 ] [com.zaxxer.hikari.HikariDataSource] [Thread-3] [350] [INFO ] HikariPool-1 - Shutdown initiated...
-[2019-03-27 11:48:27 ] [com.zaxxer.hikari.HikariDataSource] [Thread-3] [352] [INFO ] HikariPool-1 - Shutdown completed.
-[2019-03-27 11:49:03 ] [org.springframework.boot.StartupInfoLogger] [main] [50] [INFO ] Starting AppdemoApplication on Cross-KarOL-PC with PID 5824 (C:\Users\Cross-KarOL\Desktop\appdemo\target\classes started by Cross-KarOL in C:\Users\Cross-KarOL\Desktop\appdemo)
-[2019-03-27 11:49:03 ] [org.springframework.boot.StartupInfoLogger] [main] [53] [DEBUG] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
-[2019-03-27 11:49:03 ] [org.springframework.boot.SpringApplication] [main] [675] [INFO ] No active profile set, falling back to default profiles: default
-[2019-03-27 11:49:05 ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [126] [INFO ] Bootstrapping Spring Data repositories in DEFAULT mode.
-[2019-03-27 11:49:05 ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [182] [INFO ] Finished Spring Data repository scanning in 130ms. Found 3 repository interfaces.
-[2019-03-27 11:49:06 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$27ebbf87] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:49:06 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$c09987c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:49:06 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:49:06 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3e3af63f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:49:06 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$e56e2a73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:49:06 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:49:06 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$a76c0cb9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[2019-03-27 11:49:08 ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [90] [INFO ] Tomcat initialized with port(s): 8080 (http)
-[2019-03-27 11:49:08 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
-[2019-03-27 11:49:08 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
-[2019-03-27 11:49:08 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.16]
-[2019-03-27 11:49:08 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-10.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\PuTTY\;C:\apache-maven-3.6.0\bin;.]
-[2019-03-27 11:49:08 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-[2019-03-27 11:49:08 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
-[2019-03-27 11:49:08 ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [288] [DEBUG] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[2019-03-27 11:49:08 ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [296] [INFO ] Root WebApplicationContext: initialization completed in 4822 ms
-[2019-03-27 11:49:09 ] [com.zaxxer.hikari.HikariDataSource] [main] [110] [INFO ] HikariPool-1 - Starting...
-[2019-03-27 11:49:09 ] [com.zaxxer.hikari.HikariDataSource] [main] [123] [INFO ] HikariPool-1 - Start completed.
-[2019-03-27 11:49:12 ] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [main] [415] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2019-03-27 11:49:14 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/resources/**'], []
-[2019-03-27 11:49:14 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/statics/**'], []
-[2019-03-27 11:49:14 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/static/css/**'], []
-[2019-03-27 11:49:14 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/js/**'], []
-[2019-03-27 11:49:14 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/images/**'], []
-[2019-03-27 11:49:14 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/incl/**'], []
-[2019-03-27 11:49:15 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cbba012, org.springframework.security.web.context.SecurityContextPersistenceFilter@160475c4, org.springframework.security.web.header.HeaderWriterFilter@4ffd1df9, org.springframework.security.web.authentication.logout.LogoutFilter@3f7b322f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@55a409c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18fe7ba4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52d42d4c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34d7e458, org.springframework.security.web.session.SessionManagementFilter@379ff314, org.springframework.security.web.access.ExceptionTranslationFilter@5174008a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f0ffba6]
-[2019-03-27 11:49:15 ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [main] [139] [DEBUG] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-[2019-03-27 11:49:15 ] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [171] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
-[2019-03-27 11:49:15 ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] [main] [622] [DEBUG] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[2019-03-27 11:49:15 ] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration] [main] [236] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2019-03-27 11:49:15 ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping] [main] [350] [DEBUG] 19 mappings in 'requestMappingHandlerMapping'
-[2019-03-27 11:49:15 ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [main] [139] [DEBUG] Patterns [/webjars/**, /resources/**] in 'resourceHandlerMapping'
-[2019-03-27 11:49:15 ] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [main] [302] [DEBUG] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[2019-03-27 11:49:16 ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [main] [61] [INFO ] Adding welcome page template: index
-[2019-03-27 11:49:16 ] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] [main] [86] [INFO ] 
-
-Using generated security password: ff6a04ec-a297-45f4-befe-9b65ab5c3a42
-
-[2019-03-27 11:49:16 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8080"]
-[2019-03-27 11:49:16 ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [204] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
-[2019-03-27 11:49:16 ] [org.springframework.boot.StartupInfoLogger] [main] [59] [INFO ] Started AppdemoApplication in 13.783 seconds (JVM running for 20.634)
-[2019-03-27 11:49:24 ] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-10] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2019-03-27 11:49:24 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10] [524] [INFO ] Initializing Servlet 'dispatcherServlet'
-[2019-03-27 11:49:24 ] [org.springframework.web.servlet.DispatcherServlet] [http-nio-8080-exec-10] [525] [DEBUG] Detected StandardServletMultipartResolver
-[2019-03-27 11:49:24 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10] [541] [DEBUG] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[2019-03-27 11:49:24 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10] [546] [INFO ] Completed initialization in 37 ms
-[2019-03-27 11:49:24 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-10] [90] [DEBUG] GET "/", parameters={}
-[2019-03-27 11:49:24 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-10] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
-[2019-03-27 11:49:24 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-10] [19] [INFO ] **** WYWO£ANO > showMainPage()
-[2019-03-27 11:49:24 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-10] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:49:24 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-10] [309] [DEBUG] View name 'index', model {}
-[2019-03-27 11:49:24 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-10] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
-[2019-03-27 11:49:26 ] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-10] [173] [WARN ] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [120] milliseconds.
-[2019-03-27 11:49:26 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:49:28 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-6] [90] [DEBUG] GET "/resources/css/style.css", parameters={}
-[2019-03-27 11:49:28 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-6] [420] [DEBUG] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[2019-03-27 11:49:28 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-6] [1130] [DEBUG] Completed 304 NOT_MODIFIED
-[2019-03-27 11:49:30 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-1] [90] [DEBUG] GET "/", parameters={}
-[2019-03-27 11:49:30 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-1] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
-[2019-03-27 11:49:30 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-1] [19] [INFO ] **** WYWO£ANO > showMainPage()
-[2019-03-27 11:49:30 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-1] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:49:30 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-1] [309] [DEBUG] View name 'index', model {}
-[2019-03-27 11:49:30 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-1] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
-[2019-03-27 11:49:30 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:49:34 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-9] [90] [DEBUG] GET "/login", parameters={}
-[2019-03-27 11:49:34 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-9] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
-[2019-03-27 11:49:34 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-9] [347] [DEBUG] Selected '*/*;q=0.8' given [image/webp, image/apng, image/*, */*;q=0.8]
-[2019-03-27 11:49:34 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-9] [309] [DEBUG] View name 'login', model {}
-[2019-03-27 11:49:34 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-9] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
-[2019-03-27 11:49:34 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:49:35 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-5] [90] [DEBUG] GET "/register", parameters={}
-[2019-03-27 11:49:35 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-5] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.user.RegisterController.registerForm(org.springframework.ui.Model)
-[2019-03-27 11:49:35 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-5] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:49:35 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-5] [309] [DEBUG] View name 'register', model {user=karol.appdemo.user.User@1cd4abe8, org.springframework.validation.BindingResult.user=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
-[2019-03-27 11:49:35 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-5] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/register.jsp]
-[2019-03-27 11:49:36 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:49:36 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-2] [90] [DEBUG] GET "/login", parameters={}
-[2019-03-27 11:49:36 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-2] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
-[2019-03-27 11:49:36 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-2] [347] [DEBUG] Selected '*/*;q=0.8' given [image/webp, image/apng, image/*, */*;q=0.8]
-[2019-03-27 11:49:36 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-2] [309] [DEBUG] View name 'login', model {}
-[2019-03-27 11:49:36 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-2] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
-[2019-03-27 11:49:36 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:01 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-10] [90] [DEBUG] GET "/login", parameters={}
-[2019-03-27 11:50:01 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-10] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
-[2019-03-27 11:50:01 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-10] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:50:01 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-10] [309] [DEBUG] View name 'login', model {}
-[2019-03-27 11:50:01 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-10] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
-[2019-03-27 11:50:01 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:01 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-6] [90] [DEBUG] GET "/resources/css/style.css", parameters={}
-[2019-03-27 11:50:01 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-6] [420] [DEBUG] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[2019-03-27 11:50:01 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-6] [1130] [DEBUG] Completed 304 NOT_MODIFIED
-[2019-03-27 11:50:01 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-8] [90] [DEBUG] GET "/login", parameters={}
-[2019-03-27 11:50:01 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-8] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
-[2019-03-27 11:50:01 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-8] [347] [DEBUG] Selected '*/*;q=0.8' given [image/webp, image/apng, image/*, */*;q=0.8]
-[2019-03-27 11:50:01 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-8] [309] [DEBUG] View name 'login', model {}
-[2019-03-27 11:50:01 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-8] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
-[2019-03-27 11:50:01 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-8] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:12 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-5] [90] [DEBUG] GET "/", parameters={}
-[2019-03-27 11:50:12 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-5] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
-[2019-03-27 11:50:12 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-5] [19] [INFO ] **** WYWO£ANO > showMainPage()
-[2019-03-27 11:50:12 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-5] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:50:12 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-5] [309] [DEBUG] View name 'index', model {}
-[2019-03-27 11:50:12 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-5] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
-[2019-03-27 11:50:12 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:12 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-3] [90] [DEBUG] GET "/favicon.ico", parameters={}
-[2019-03-27 11:50:12 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-3] [420] [DEBUG] Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
-[2019-03-27 11:50:12 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-3] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:14 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-2] [90] [DEBUG] GET "/", parameters={}
-[2019-03-27 11:50:14 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-2] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
-[2019-03-27 11:50:14 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-2] [19] [INFO ] **** WYWO£ANO > showMainPage()
-[2019-03-27 11:50:14 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-2] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:50:14 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-2] [309] [DEBUG] View name 'index', model {}
-[2019-03-27 11:50:14 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-2] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
-[2019-03-27 11:50:14 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:15 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-4] [90] [DEBUG] GET "/admin", parameters={}
-[2019-03-27 11:50:15 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-4] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.admin.AdminPageController.openAdminMainPage()
-[2019-03-27 11:50:15 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-4] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:50:15 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-4] [309] [DEBUG] View name 'admin/admin', model {}
-[2019-03-27 11:50:15 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-4] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/admin/admin.jsp]
-[2019-03-27 11:50:15 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-4] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:16 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-10] [90] [DEBUG] GET "/admin/users/1", parameters={}
-[2019-03-27 11:50:16 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-10] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.admin.AdminPageController.openAdminAllUsersPage(int,org.springframework.ui.Model)
-[2019-03-27 11:50:16 ] [karol.appdemo.admin.AdminPageController] [http-nio-8080-exec-10] [58] [INFO ] **** WYWO£ANO > openAdminAllUsersPage(1, {})
-[2019-03-27 11:50:16 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-10] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:50:16 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-10] [309] [DEBUG] View name 'admin/users', model {totalPages=1, currentPage=1, userList=[karol.appdemo.user.User@765ae878, karol.appdemo.user.User@458c25de, karol.appdemo.user.User@4c0ff740], recordStartCounter=0}
-[2019-03-27 11:50:16 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-10] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/admin/users.jsp]
-[2019-03-27 11:50:17 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:17 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-1] [90] [DEBUG] GET "/resources/images/delicon.png", parameters={}
-[2019-03-27 11:50:17 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-6] [90] [DEBUG] GET "/resources/images/deliconinact.png", parameters={}
-[2019-03-27 11:50:17 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-6] [420] [DEBUG] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[2019-03-27 11:50:17 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-6] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:17 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-1] [420] [DEBUG] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[2019-03-27 11:50:17 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:18 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-8] [90] [DEBUG] GET "/admin/users/1", parameters={}
-[2019-03-27 11:50:18 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-8] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.admin.AdminPageController.openAdminAllUsersPage(int,org.springframework.ui.Model)
-[2019-03-27 11:50:18 ] [karol.appdemo.admin.AdminPageController] [http-nio-8080-exec-8] [58] [INFO ] **** WYWO£ANO > openAdminAllUsersPage(1, {})
-[2019-03-27 11:50:18 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-8] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:50:18 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-8] [309] [DEBUG] View name 'admin/users', model {totalPages=1, currentPage=1, userList=[karol.appdemo.user.User@49094ae5, karol.appdemo.user.User@19141839, karol.appdemo.user.User@7ad31816], recordStartCounter=0}
-[2019-03-27 11:50:18 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-8] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/admin/users.jsp]
-[2019-03-27 11:50:18 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-8] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:19 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-9] [90] [DEBUG] GET "/admin/users/1", parameters={}
-[2019-03-27 11:50:19 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-9] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.admin.AdminPageController.openAdminAllUsersPage(int,org.springframework.ui.Model)
-[2019-03-27 11:50:19 ] [karol.appdemo.admin.AdminPageController] [http-nio-8080-exec-9] [58] [INFO ] **** WYWO£ANO > openAdminAllUsersPage(1, {})
-[2019-03-27 11:50:19 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-9] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:50:19 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-9] [309] [DEBUG] View name 'admin/users', model {totalPages=1, currentPage=1, userList=[karol.appdemo.user.User@7ad70b32, karol.appdemo.user.User@79e50816, karol.appdemo.user.User@36e715fd], recordStartCounter=0}
-[2019-03-27 11:50:19 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-9] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/admin/users.jsp]
-[2019-03-27 11:50:19 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:20 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-7] [90] [DEBUG] GET "/admin", parameters={}
-[2019-03-27 11:50:20 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-7] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.admin.AdminPageController.openAdminMainPage()
-[2019-03-27 11:50:20 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-7] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:50:20 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-7] [309] [DEBUG] View name 'admin/admin', model {}
-[2019-03-27 11:50:20 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-7] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/admin/admin.jsp]
-[2019-03-27 11:50:20 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-7] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:21 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-5] [90] [DEBUG] GET "/admin/users/1", parameters={}
-[2019-03-27 11:50:21 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-5] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.admin.AdminPageController.openAdminAllUsersPage(int,org.springframework.ui.Model)
-[2019-03-27 11:50:21 ] [karol.appdemo.admin.AdminPageController] [http-nio-8080-exec-5] [58] [INFO ] **** WYWO£ANO > openAdminAllUsersPage(1, {})
-[2019-03-27 11:50:21 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-5] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:50:21 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-5] [309] [DEBUG] View name 'admin/users', model {totalPages=1, currentPage=1, userList=[karol.appdemo.user.User@4977b58b, karol.appdemo.user.User@7ee9dc02, karol.appdemo.user.User@17fdfab5], recordStartCounter=0}
-[2019-03-27 11:50:21 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-5] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/admin/users.jsp]
-[2019-03-27 11:50:21 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:27 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-3] [90] [DEBUG] GET "/profil", parameters={}
-[2019-03-27 11:50:27 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-3] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.user.ProfilController.showUserProfilePage(org.springframework.ui.Model)
-[2019-03-27 11:50:27 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-3] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:50:27 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-3] [309] [DEBUG] View name 'profil', model {user=karol.appdemo.user.User@3284d66c, org.springframework.validation.BindingResult.user=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
-[2019-03-27 11:50:27 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-3] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/profil.jsp]
-[2019-03-27 11:50:27 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-3] [1130] [DEBUG] Completed 200 OK
-[2019-03-27 11:50:29 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-2] [90] [DEBUG] GET "/", parameters={}
-[2019-03-27 11:50:29 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-2] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
-[2019-03-27 11:50:29 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-2] [19] [INFO ] **** WYWO£ANO > showMainPage()
-[2019-03-27 11:50:29 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-2] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-[2019-03-27 11:50:29 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-2] [309] [DEBUG] View name 'index', model {}
-[2019-03-27 11:50:29 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-2] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
-[2019-03-27 11:50:29 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:00:15 ] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [Thread-3] [208] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2019-03-29 00:00:15 ] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [Thread-3] [597] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-29 00:00:15 ] [com.zaxxer.hikari.HikariDataSource] [Thread-3] [350] [INFO ] HikariPool-1 - Shutdown initiated...
+[2019-03-29 00:00:15 ] [com.zaxxer.hikari.HikariDataSource] [Thread-3] [352] [INFO ] HikariPool-1 - Shutdown completed.
+[2019-03-29 00:00:32 ] [org.springframework.boot.StartupInfoLogger] [main] [50] [INFO ] Starting AppdemoApplication on Cross-KarOL-PC with PID 2368 (C:\Users\Cross-KarOL\Desktop\appdemo\target\classes started by Cross-KarOL in C:\Users\Cross-KarOL\Desktop\appdemo)
+[2019-03-29 00:00:32 ] [org.springframework.boot.StartupInfoLogger] [main] [53] [DEBUG] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+[2019-03-29 00:00:32 ] [org.springframework.boot.SpringApplication] [main] [675] [INFO ] No active profile set, falling back to default profiles: default
+[2019-03-29 00:00:34 ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [126] [INFO ] Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-03-29 00:00:34 ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [182] [INFO ] Finished Spring Data repository scanning in 174ms. Found 4 repository interfaces.
+[2019-03-29 00:00:35 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$870b9925] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-29 00:00:35 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$68be657] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-29 00:00:37 ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [90] [INFO ] Tomcat initialized with port(s): 8080 (http)
+[2019-03-29 00:00:37 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
+[2019-03-29 00:00:37 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2019-03-29 00:00:37 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.16]
+[2019-03-29 00:00:37 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-10.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\PuTTY\;C:\apache-maven-3.6.0\bin;.]
+[2019-03-29 00:00:37 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2019-03-29 00:00:37 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2019-03-29 00:00:37 ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [288] [DEBUG] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[2019-03-29 00:00:37 ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [296] [INFO ] Root WebApplicationContext: initialization completed in 5418 ms
+[2019-03-29 00:00:38 ] [com.zaxxer.hikari.HikariDataSource] [main] [110] [INFO ] HikariPool-1 - Starting...
+[2019-03-29 00:00:39 ] [com.zaxxer.hikari.HikariDataSource] [main] [123] [INFO ] HikariPool-1 - Start completed.
+[2019-03-29 00:00:41 ] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [main] [415] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-29 00:00:44 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/resources/**'], []
+[2019-03-29 00:00:44 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/statics/**'], []
+[2019-03-29 00:00:44 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/static/css/**'], []
+[2019-03-29 00:00:44 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/js/**'], []
+[2019-03-29 00:00:44 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/images/**'], []
+[2019-03-29 00:00:44 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/incl/**'], []
+[2019-03-29 00:00:44 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70678589, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c03fe86, org.springframework.security.web.header.HeaderWriterFilter@5596a151, org.springframework.security.web.authentication.logout.LogoutFilter@63d0435b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@471f89d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30d5833c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@318be3c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48d9e7e8, org.springframework.security.web.session.SessionManagementFilter@a0e5796, org.springframework.security.web.access.ExceptionTranslationFilter@2804528f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49f74e9a]
+[2019-03-29 00:00:44 ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [main] [139] [DEBUG] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+[2019-03-29 00:00:45 ] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [171] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2019-03-29 00:00:45 ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] [main] [622] [DEBUG] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2019-03-29 00:00:45 ] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration] [main] [236] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2019-03-29 00:00:45 ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping] [main] [350] [DEBUG] 22 mappings in 'requestMappingHandlerMapping'
+[2019-03-29 00:00:45 ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [main] [139] [DEBUG] Patterns [/webjars/**, /resources/**] in 'resourceHandlerMapping'
+[2019-03-29 00:00:45 ] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [main] [302] [DEBUG] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2019-03-29 00:00:45 ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [main] [61] [INFO ] Adding welcome page template: index
+[2019-03-29 00:00:46 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8080"]
+[2019-03-29 00:00:46 ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [204] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+[2019-03-29 00:00:46 ] [org.springframework.boot.StartupInfoLogger] [main] [59] [INFO ] Started AppdemoApplication in 15.431 seconds (JVM running for 26.825)
+[2019-03-29 00:00:58 ] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-5] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2019-03-29 00:00:58 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [524] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2019-03-29 00:00:58 ] [org.springframework.web.servlet.DispatcherServlet] [http-nio-8080-exec-5] [525] [DEBUG] Detected StandardServletMultipartResolver
+[2019-03-29 00:00:58 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [541] [DEBUG] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2019-03-29 00:00:58 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [546] [INFO ] Completed initialization in 49 ms
+[2019-03-29 00:00:58 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-5] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:00:58 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-5] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:00:58 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-5] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:00:58 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-5] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:00:58 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-5] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:00:58 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-5] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:01:00 ] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-5] [173] [WARN ] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [107] milliseconds.
+[2019-03-29 00:01:00 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:01:00 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-9] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:01:00 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-9] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:01:00 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-9] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:01:00 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-1] [90] [DEBUG] GET "/resources/css/style.css", parameters={}
+[2019-03-29 00:01:00 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-9] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:01:00 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-9] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:01:00 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-9] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:01:00 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:01:00 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-1] [420] [DEBUG] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[2019-03-29 00:01:00 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1] [1130] [DEBUG] Completed 304 NOT_MODIFIED
+[2019-03-29 00:01:01 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-3] [90] [DEBUG] GET "/login", parameters={}
+[2019-03-29 00:01:01 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-3] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
+[2019-03-29 00:01:01 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-3] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:01:01 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-3] [309] [DEBUG] View name 'login', model {}
+[2019-03-29 00:01:01 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-3] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
+[2019-03-29 00:01:02 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-3] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:01:20 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-7] [90] [DEBUG] GET "/login?error=true", parameters={masked}
+[2019-03-29 00:01:20 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-7] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
+[2019-03-29 00:01:20 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-7] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:01:20 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-7] [309] [DEBUG] View name 'login', model {}
+[2019-03-29 00:01:20 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-7] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
+[2019-03-29 00:01:20 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-7] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:01:29 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-4] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:01:29 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-4] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:01:29 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-4] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:01:29 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-4] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:01:29 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-4] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:01:29 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-4] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:01:29 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-4] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:01:31 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-10] [90] [DEBUG] GET "/userposts", parameters={}
+[2019-03-29 00:01:31 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-10] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.post.PostController.postFormaAll(org.springframework.ui.Model)
+[2019-03-29 00:01:31 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-10] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:01:31 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-10] [309] [DEBUG] View name 'userposts', model {postList=[karol.appdemo.post.Post@64910d1a, karol.appdemo.post.Post@64437838, karol.appdemo.post.Post@d055d, karol.appdemo.post.Post@6ffc0bf4, karol.appdemo.post.Post@3447f74f, karol.appdemo.post.Post@4b3acb47, karol.appdemo.post.Post@23751890, karol.appdemo.post.Post@2c5904a1, karol.appdemo.post.Post@27af73ea]}
+[2019-03-29 00:01:31 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-10] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/userposts.jsp]
+[2019-03-29 00:01:31 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:04:34 ] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [Thread-3] [208] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2019-03-29 00:04:34 ] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [Thread-3] [597] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-29 00:04:34 ] [com.zaxxer.hikari.HikariDataSource] [Thread-3] [350] [INFO ] HikariPool-1 - Shutdown initiated...
+[2019-03-29 00:04:34 ] [com.zaxxer.hikari.HikariDataSource] [Thread-3] [352] [INFO ] HikariPool-1 - Shutdown completed.
+[2019-03-29 00:04:57 ] [org.hibernate.validator.internal.util.Version] [background-preinit] [21] [INFO ] HV000001: Hibernate Validator 6.0.14.Final
+[2019-03-29 00:04:57 ] [org.springframework.boot.StartupInfoLogger] [main] [50] [INFO ] Starting AppdemoApplication on Cross-KarOL-PC with PID 692 (C:\Users\Cross-KarOL\Desktop\appdemo\target\classes started by Cross-KarOL in C:\Users\Cross-KarOL\Desktop\appdemo)
+[2019-03-29 00:04:57 ] [org.springframework.boot.StartupInfoLogger] [main] [53] [DEBUG] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+[2019-03-29 00:04:57 ] [org.springframework.boot.SpringApplication] [main] [675] [INFO ] No active profile set, falling back to default profiles: default
+[2019-03-29 00:04:59 ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [126] [INFO ] Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-03-29 00:05:00 ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [182] [INFO ] Finished Spring Data repository scanning in 163ms. Found 4 repository interfaces.
+[2019-03-29 00:05:01 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9ca64684] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-29 00:05:01 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$1c2693b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-29 00:05:02 ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [90] [INFO ] Tomcat initialized with port(s): 8080 (http)
+[2019-03-29 00:05:02 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
+[2019-03-29 00:05:02 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2019-03-29 00:05:02 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.16]
+[2019-03-29 00:05:02 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-10.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\PuTTY\;C:\apache-maven-3.6.0\bin;.]
+[2019-03-29 00:05:03 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2019-03-29 00:05:03 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2019-03-29 00:05:03 ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [288] [DEBUG] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[2019-03-29 00:05:03 ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [296] [INFO ] Root WebApplicationContext: initialization completed in 5895 ms
+[2019-03-29 00:05:04 ] [com.zaxxer.hikari.HikariDataSource] [main] [110] [INFO ] HikariPool-1 - Starting...
+[2019-03-29 00:05:05 ] [com.zaxxer.hikari.HikariDataSource] [main] [123] [INFO ] HikariPool-1 - Start completed.
+[2019-03-29 00:05:07 ] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [main] [415] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-29 00:05:10 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/resources/**'], []
+[2019-03-29 00:05:10 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/statics/**'], []
+[2019-03-29 00:05:10 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/static/css/**'], []
+[2019-03-29 00:05:10 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/js/**'], []
+[2019-03-29 00:05:10 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/images/**'], []
+[2019-03-29 00:05:10 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/incl/**'], []
+[2019-03-29 00:05:11 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64ff4d36, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d7cb596, org.springframework.security.web.header.HeaderWriterFilter@df733e7, org.springframework.security.web.authentication.logout.LogoutFilter@6b3914ce, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b752f5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26c765b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@467c0d10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76816069, org.springframework.security.web.session.SessionManagementFilter@64bd782d, org.springframework.security.web.access.ExceptionTranslationFilter@6eefe627, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a2cac7c]
+[2019-03-29 00:05:11 ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [main] [139] [DEBUG] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+[2019-03-29 00:05:11 ] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [171] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2019-03-29 00:05:11 ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] [main] [622] [DEBUG] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2019-03-29 00:05:11 ] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration] [main] [236] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2019-03-29 00:05:11 ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping] [main] [350] [DEBUG] 22 mappings in 'requestMappingHandlerMapping'
+[2019-03-29 00:05:11 ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [main] [139] [DEBUG] Patterns [/webjars/**, /resources/**] in 'resourceHandlerMapping'
+[2019-03-29 00:05:11 ] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [main] [302] [DEBUG] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2019-03-29 00:05:12 ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [main] [61] [INFO ] Adding welcome page template: index
+[2019-03-29 00:05:12 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8080"]
+[2019-03-29 00:05:12 ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [204] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+[2019-03-29 00:05:12 ] [org.springframework.boot.StartupInfoLogger] [main] [59] [INFO ] Started AppdemoApplication in 16.377 seconds (JVM running for 29.091)
+[2019-03-29 00:05:39 ] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-5] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2019-03-29 00:05:39 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [524] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2019-03-29 00:05:39 ] [org.springframework.web.servlet.DispatcherServlet] [http-nio-8080-exec-5] [525] [DEBUG] Detected StandardServletMultipartResolver
+[2019-03-29 00:05:39 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [541] [DEBUG] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2019-03-29 00:05:39 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [546] [INFO ] Completed initialization in 44 ms
+[2019-03-29 00:05:39 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-1] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:05:39 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-1] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:05:39 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-1] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:05:39 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-1] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:05:39 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-1] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:05:39 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-1] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:05:41 ] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-1] [173] [WARN ] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [207] milliseconds.
+[2019-03-29 00:05:41 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:05:43 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-8] [90] [DEBUG] GET "/login", parameters={}
+[2019-03-29 00:05:43 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-8] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
+[2019-03-29 00:05:43 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-8] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:05:43 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-8] [309] [DEBUG] View name 'login', model {}
+[2019-03-29 00:05:43 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-8] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
+[2019-03-29 00:05:43 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-8] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:05:52 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-10] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:05:52 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-10] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:05:52 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-10] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:05:52 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-10] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:05:52 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-10] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:05:52 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-10] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:05:52 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:05:56 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-6] [90] [DEBUG] GET "/userposts", parameters={}
+[2019-03-29 00:05:56 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-6] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.post.PostController.postFormaAll(org.springframework.ui.Model)
+[2019-03-29 00:05:56 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-6] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:05:56 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-6] [309] [DEBUG] View name 'userposts', model {postList=[karol.appdemo.post.Post@7799a676, karol.appdemo.post.Post@1fc36ff0, karol.appdemo.post.Post@223741ce, karol.appdemo.post.Post@1117340b, karol.appdemo.post.Post@4e18142d, karol.appdemo.post.Post@4a204ef1, karol.appdemo.post.Post@52815f4a, karol.appdemo.post.Post@7a9e8e7d, karol.appdemo.post.Post@74a9547f]}
+[2019-03-29 00:05:56 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-6] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/userposts.jsp]
+[2019-03-29 00:05:56 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-6] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:05:58 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-9] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:05:58 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-9] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:05:58 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-9] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:05:58 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-9] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:05:58 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-9] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:05:59 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-9] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:05:59 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:06:00 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-3] [90] [DEBUG] GET "/login", parameters={}
+[2019-03-29 00:06:00 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-3] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
+[2019-03-29 00:06:00 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-3] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:06:00 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-3] [309] [DEBUG] View name 'login', model {}
+[2019-03-29 00:06:00 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-3] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
+[2019-03-29 00:06:00 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-3] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:06:17 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-8] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:06:17 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-8] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:06:17 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-8] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:06:17 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-8] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:06:17 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-8] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:06:17 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-8] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:06:17 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-8] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:06:20 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-4] [90] [DEBUG] GET "/adminposts", parameters={}
+[2019-03-29 00:06:20 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-4] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.post.PostController.postForm(org.springframework.ui.Model)
+[2019-03-29 00:06:20 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-4] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:06:20 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-4] [309] [DEBUG] View name 'adminposts', model {post=karol.appdemo.post.Post@6c8ac6ea, org.springframework.validation.BindingResult.post=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+[2019-03-29 00:06:20 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-4] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/adminposts.jsp]
+[2019-03-29 00:06:20 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-4] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:06:23 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-7] [90] [DEBUG] POST "/addpost", parameters={masked}
+[2019-03-29 00:06:23 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-7] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.post.PostController.postAction(karol.appdemo.post.Post,org.springframework.validation.BindingResult,org.springframework.ui.Model,java.util.Locale)
+[2019-03-29 00:06:24 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-7] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:06:24 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-7] [309] [DEBUG] View name 'adminposts', model {post=karol.appdemo.post.Post@5fe23359, message=Post zosta³ dodany pomyœlnie!!, org.springframework.validation.BindingResult.post=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+[2019-03-29 00:06:24 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-7] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/adminposts.jsp]
+[2019-03-29 00:06:24 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-7] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:06:26 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-10] [90] [DEBUG] POST "/addpost", parameters={masked}
+[2019-03-29 00:06:26 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-10] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.post.PostController.postAction(karol.appdemo.post.Post,org.springframework.validation.BindingResult,org.springframework.ui.Model,java.util.Locale)
+[2019-03-29 00:06:26 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-10] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:06:26 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-10] [309] [DEBUG] View name 'adminposts', model {post=karol.appdemo.post.Post@3e3d13d4, message=Post zosta³ dodany pomyœlnie!!, org.springframework.validation.BindingResult.post=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+[2019-03-29 00:06:26 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-10] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/adminposts.jsp]
+[2019-03-29 00:06:26 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:07:15 ] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [Thread-3] [208] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2019-03-29 00:07:15 ] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [Thread-3] [597] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-29 00:07:15 ] [com.zaxxer.hikari.HikariDataSource] [Thread-3] [350] [INFO ] HikariPool-1 - Shutdown initiated...
+[2019-03-29 00:07:15 ] [com.zaxxer.hikari.HikariDataSource] [Thread-3] [352] [INFO ] HikariPool-1 - Shutdown completed.
+[2019-03-29 00:07:26 ] [org.springframework.boot.StartupInfoLogger] [main] [50] [INFO ] Starting AppdemoApplication on Cross-KarOL-PC with PID 4624 (C:\Users\Cross-KarOL\Desktop\appdemo\target\classes started by Cross-KarOL in C:\Users\Cross-KarOL\Desktop\appdemo)
+[2019-03-29 00:07:26 ] [org.springframework.boot.StartupInfoLogger] [main] [53] [DEBUG] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+[2019-03-29 00:07:26 ] [org.springframework.boot.SpringApplication] [main] [675] [INFO ] No active profile set, falling back to default profiles: default
+[2019-03-29 00:07:28 ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [126] [INFO ] Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-03-29 00:07:29 ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [182] [INFO ] Finished Spring Data repository scanning in 173ms. Found 4 repository interfaces.
+[2019-03-29 00:07:30 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8400570d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-29 00:07:30 ] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [main] [330] [INFO ] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$380a43f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-29 00:07:31 ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [90] [INFO ] Tomcat initialized with port(s): 8080 (http)
+[2019-03-29 00:07:31 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
+[2019-03-29 00:07:31 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2019-03-29 00:07:31 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.16]
+[2019-03-29 00:07:31 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-10.0.1\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\PuTTY\;C:\apache-maven-3.6.0\bin;.]
+[2019-03-29 00:07:32 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2019-03-29 00:07:32 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2019-03-29 00:07:32 ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [288] [DEBUG] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[2019-03-29 00:07:32 ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [296] [INFO ] Root WebApplicationContext: initialization completed in 4977 ms
+[2019-03-29 00:07:32 ] [com.zaxxer.hikari.HikariDataSource] [main] [110] [INFO ] HikariPool-1 - Starting...
+[2019-03-29 00:07:33 ] [com.zaxxer.hikari.HikariDataSource] [main] [123] [INFO ] HikariPool-1 - Start completed.
+[2019-03-29 00:07:36 ] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [main] [415] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-29 00:07:39 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/resources/**'], []
+[2019-03-29 00:07:39 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/statics/**'], []
+[2019-03-29 00:07:39 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/static/css/**'], []
+[2019-03-29 00:07:39 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/js/**'], []
+[2019-03-29 00:07:39 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/images/**'], []
+[2019-03-29 00:07:39 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: Ant [pattern='/incl/**'], []
+[2019-03-29 00:07:39 ] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [43] [INFO ] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31b27a0, org.springframework.security.web.context.SecurityContextPersistenceFilter@535c3705, org.springframework.security.web.header.HeaderWriterFilter@16a09c7f, org.springframework.security.web.authentication.logout.LogoutFilter@3cf484d2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a8129d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ec592a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42f70d92, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39ee2c0e, org.springframework.security.web.session.SessionManagementFilter@13dc1b3f, org.springframework.security.web.access.ExceptionTranslationFilter@7bcab434, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@704ea28c]
+[2019-03-29 00:07:39 ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [main] [139] [DEBUG] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+[2019-03-29 00:07:40 ] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [171] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2019-03-29 00:07:40 ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] [main] [622] [DEBUG] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2019-03-29 00:07:40 ] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration] [main] [236] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2019-03-29 00:07:40 ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping] [main] [350] [DEBUG] 22 mappings in 'requestMappingHandlerMapping'
+[2019-03-29 00:07:40 ] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [main] [139] [DEBUG] Patterns [/webjars/**, /resources/**] in 'resourceHandlerMapping'
+[2019-03-29 00:07:40 ] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [main] [302] [DEBUG] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2019-03-29 00:07:40 ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [main] [61] [INFO ] Adding welcome page template: index
+[2019-03-29 00:07:41 ] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting ProtocolHandler ["http-nio-8080"]
+[2019-03-29 00:07:41 ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [204] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+[2019-03-29 00:07:41 ] [org.springframework.boot.StartupInfoLogger] [main] [59] [INFO ] Started AppdemoApplication in 15.847 seconds (JVM running for 23.656)
+[2019-03-29 00:08:03 ] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-1] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2019-03-29 00:08:03 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1] [524] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2019-03-29 00:08:03 ] [org.springframework.web.servlet.DispatcherServlet] [http-nio-8080-exec-1] [525] [DEBUG] Detected StandardServletMultipartResolver
+[2019-03-29 00:08:03 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1] [541] [DEBUG] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2019-03-29 00:08:03 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1] [546] [INFO ] Completed initialization in 54 ms
+[2019-03-29 00:08:03 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-1] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:08:03 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-1] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:08:03 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-1] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:08:03 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-1] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:08:03 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-1] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:08:03 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-1] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:08:06 ] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-1] [173] [WARN ] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [321] milliseconds.
+[2019-03-29 00:08:06 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:08:06 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-5] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:08:06 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-5] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:08:06 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-5] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:08:06 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-5] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:08:06 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-5] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:08:06 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-5] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:08:06 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:08:07 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-9] [90] [DEBUG] GET "/login", parameters={}
+[2019-03-29 00:08:07 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-9] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
+[2019-03-29 00:08:07 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-9] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:08:07 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-9] [309] [DEBUG] View name 'login', model {}
+[2019-03-29 00:08:07 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-9] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
+[2019-03-29 00:08:07 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:08:29 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-10] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:08:29 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-10] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:08:29 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-10] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:08:29 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-10] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:08:29 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-10] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:08:29 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-10] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:08:29 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:08:31 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-6] [90] [DEBUG] GET "/adminposts", parameters={}
+[2019-03-29 00:08:31 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-6] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.post.PostController.postForm(org.springframework.ui.Model)
+[2019-03-29 00:08:31 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-6] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:08:31 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-6] [309] [DEBUG] View name 'adminposts', model {post=karol.appdemo.post.Post@6303ddde, org.springframework.validation.BindingResult.post=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+[2019-03-29 00:08:31 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-6] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/adminposts.jsp]
+[2019-03-29 00:08:31 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-6] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:08:33 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-2] [90] [DEBUG] POST "/addpost", parameters={masked}
+[2019-03-29 00:08:33 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-2] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.post.PostController.postAction(karol.appdemo.post.Post,org.springframework.validation.BindingResult,org.springframework.ui.Model,java.util.Locale)
+[2019-03-29 00:08:34 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-2] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:08:34 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-2] [309] [DEBUG] View name 'adminposts', model {post=karol.appdemo.post.Post@6d9867a0, message=Post zosta³ dodany pomyœlnie!!, org.springframework.validation.BindingResult.post=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+[2019-03-29 00:08:34 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-2] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/adminposts.jsp]
+[2019-03-29 00:08:34 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:08:36 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-7] [90] [DEBUG] POST "/addpost", parameters={masked}
+[2019-03-29 00:08:36 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-7] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.post.PostController.postAction(karol.appdemo.post.Post,org.springframework.validation.BindingResult,org.springframework.ui.Model,java.util.Locale)
+[2019-03-29 00:08:37 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-7] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:08:37 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-7] [309] [DEBUG] View name 'adminposts', model {post=karol.appdemo.post.Post@41d92251, message=Post zosta³ dodany pomyœlnie!!, org.springframework.validation.BindingResult.post=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+[2019-03-29 00:08:37 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-7] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/adminposts.jsp]
+[2019-03-29 00:08:37 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-7] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:08:47 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-8] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:08:47 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-8] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:08:47 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-8] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:08:47 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-8] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:08:47 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-8] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:08:47 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-8] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:08:47 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-8] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:08:49 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-1] [90] [DEBUG] GET "/login", parameters={}
+[2019-03-29 00:08:49 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-1] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.LoginPageController.showLoginPage()
+[2019-03-29 00:08:49 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-1] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:08:49 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-1] [309] [DEBUG] View name 'login', model {}
+[2019-03-29 00:08:49 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-1] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/login.jsp]
+[2019-03-29 00:08:49 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:08:57 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-9] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:08:57 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-9] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:08:57 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-9] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:08:57 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-9] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:08:57 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-9] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:08:57 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-9] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:08:57 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:08:59 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-4] [90] [DEBUG] GET "/userposts", parameters={}
+[2019-03-29 00:08:59 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-4] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.post.PostController.postFormaAll(org.springframework.ui.Model)
+[2019-03-29 00:08:59 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-4] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:08:59 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-4] [309] [DEBUG] View name 'userposts', model {postList=[karol.appdemo.post.Post@41ac510, karol.appdemo.post.Post@4923a059, karol.appdemo.post.Post@6c602a7c, karol.appdemo.post.Post@1ec93f87, karol.appdemo.post.Post@320c721b, karol.appdemo.post.Post@66792d6b, karol.appdemo.post.Post@b27c812, karol.appdemo.post.Post@5c45ebf6, karol.appdemo.post.Post@d08c6cf, karol.appdemo.post.Post@2235a070, karol.appdemo.post.Post@17e79b7c, karol.appdemo.post.Post@640ec82d, karol.appdemo.post.Post@2f7b44dd]}
+[2019-03-29 00:08:59 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-4] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/userposts.jsp]
+[2019-03-29 00:08:59 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-4] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:09:12 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-6] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:09:12 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-6] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:09:12 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-6] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:09:12 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-6] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:09:12 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-6] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:09:12 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-6] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:09:12 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-6] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:09:14 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-2] [90] [DEBUG] GET "/userposts", parameters={}
+[2019-03-29 00:09:14 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-2] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.post.PostController.postFormaAll(org.springframework.ui.Model)
+[2019-03-29 00:09:14 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-2] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:09:14 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-2] [309] [DEBUG] View name 'userposts', model {postList=[karol.appdemo.post.Post@622e6523, karol.appdemo.post.Post@5b00a039, karol.appdemo.post.Post@58abe4fd, karol.appdemo.post.Post@6f486b9, karol.appdemo.post.Post@751a37f4, karol.appdemo.post.Post@2483fd9d, karol.appdemo.post.Post@230879fc, karol.appdemo.post.Post@16bf26a, karol.appdemo.post.Post@25ead024, karol.appdemo.post.Post@1ebebe11, karol.appdemo.post.Post@7e19f3a3, karol.appdemo.post.Post@203fb6a8, karol.appdemo.post.Post@53a7297b]}
+[2019-03-29 00:09:14 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-2] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/userposts.jsp]
+[2019-03-29 00:09:14 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:09:40 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-3] [90] [DEBUG] GET "/userposts", parameters={}
+[2019-03-29 00:09:40 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-3] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.post.PostController.postFormaAll(org.springframework.ui.Model)
+[2019-03-29 00:09:40 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-3] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:09:40 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-3] [309] [DEBUG] View name 'userposts', model {postList=[karol.appdemo.post.Post@ea5f75a, karol.appdemo.post.Post@371a3b6f, karol.appdemo.post.Post@3f61bb18, karol.appdemo.post.Post@4f34298e, karol.appdemo.post.Post@6e8a0815, karol.appdemo.post.Post@8ad87e8, karol.appdemo.post.Post@3a26549e, karol.appdemo.post.Post@5430620d, karol.appdemo.post.Post@6ac4123e, karol.appdemo.post.Post@eb25a49, karol.appdemo.post.Post@6b87da5, karol.appdemo.post.Post@51cf4775, karol.appdemo.post.Post@1b50ea90]}
+[2019-03-29 00:09:40 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-3] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/userposts.jsp]
+[2019-03-29 00:09:40 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-3] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:09:43 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-8] [90] [DEBUG] GET "/index", parameters={}
+[2019-03-29 00:09:43 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-8] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:09:43 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-8] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:09:43 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-8] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:09:43 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-8] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:09:43 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-8] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:09:43 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-8] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:09:44 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-1] [90] [DEBUG] GET "/index", parameters={}
+[2019-03-29 00:09:44 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-1] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:09:44 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-1] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:09:44 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-1] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:09:44 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-1] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:09:44 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-1] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:09:44 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:09:44 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-5] [90] [DEBUG] GET "/profil", parameters={}
+[2019-03-29 00:09:44 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-5] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.user.ProfilController.showUserProfilePage(org.springframework.ui.Model)
+[2019-03-29 00:09:45 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-5] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:09:45 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-5] [309] [DEBUG] View name 'profil', model {user=Karol Kawecki, org.springframework.validation.BindingResult.user=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+[2019-03-29 00:09:45 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-5] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/profil.jsp]
+[2019-03-29 00:09:45 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:09:46 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-9] [90] [DEBUG] GET "/index", parameters={}
+[2019-03-29 00:09:46 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-9] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:09:46 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-9] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:09:46 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-9] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:09:46 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-9] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:09:46 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-9] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:09:46 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:09:47 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-4] [90] [DEBUG] GET "/", parameters={}
+[2019-03-29 00:09:47 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-4] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.mainController.MainPageController.showMainPage()
+[2019-03-29 00:09:47 ] [karol.appdemo.mainController.MainPageController] [http-nio-8080-exec-4] [19] [INFO ] **** WYWO£ANO > showMainPage()
+[2019-03-29 00:09:47 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-4] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:09:47 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-4] [309] [DEBUG] View name 'index', model {}
+[2019-03-29 00:09:47 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-4] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/index.jsp]
+[2019-03-29 00:09:47 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-4] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:09:49 ] [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-10] [90] [DEBUG] GET "/userposts", parameters={}
+[2019-03-29 00:09:49 ] [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-10] [420] [DEBUG] Mapped to public java.lang.String karol.appdemo.post.PostController.postFormaAll(org.springframework.ui.Model)
+[2019-03-29 00:09:49 ] [org.springframework.web.servlet.view.ContentNegotiatingViewResolver] [http-nio-8080-exec-10] [347] [DEBUG] Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[2019-03-29 00:09:49 ] [org.springframework.web.servlet.view.AbstractView] [http-nio-8080-exec-10] [309] [DEBUG] View name 'userposts', model {postList=[karol.appdemo.post.Post@692c6ea4, karol.appdemo.post.Post@7b99e292, karol.appdemo.post.Post@580f44e2, karol.appdemo.post.Post@350966b, karol.appdemo.post.Post@90391eb, karol.appdemo.post.Post@3d3a7f2b, karol.appdemo.post.Post@1fb0043a, karol.appdemo.post.Post@18543a69, karol.appdemo.post.Post@d4d6c41, karol.appdemo.post.Post@636089e4, karol.appdemo.post.Post@7ceed066, karol.appdemo.post.Post@45503ae0, karol.appdemo.post.Post@2319696f]}
+[2019-03-29 00:09:49 ] [org.springframework.web.servlet.view.InternalResourceView] [http-nio-8080-exec-10] [168] [DEBUG] Forwarding to [/WEB-INF/jsp/userposts.jsp]
+[2019-03-29 00:09:49 ] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10] [1130] [DEBUG] Completed 200 OK
+[2019-03-29 00:10:00 ] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [Thread-3] [208] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2019-03-29 00:10:00 ] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [Thread-3] [597] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-29 00:10:00 ] [com.zaxxer.hikari.HikariDataSource] [Thread-3] [350] [INFO ] HikariPool-1 - Shutdown initiated...
+[2019-03-29 00:10:00 ] [com.zaxxer.hikari.HikariDataSource] [Thread-3] [352] [INFO ] HikariPool-1 - Shutdown completed.

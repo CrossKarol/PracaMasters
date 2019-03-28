@@ -1,7 +1,5 @@
 package karol.appdemo.user;
 
-import org.springframework.stereotype.Controller;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Set;
@@ -35,7 +33,7 @@ public class User {
     @NotNull
     private int active;
 
-    @ManyToMany(cascade = CascadeType.ALL) // określamy relacje wielu do wielu // joinujemy dwie tablice, zbieramy z nich dane, nie tworzymy dla nie encji
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
@@ -138,6 +136,11 @@ public class User {
 
     public void setActivationCode(String activationCode) {
         this.activationCode = activationCode;
+    }
+
+    @Override
+    public String toString() {
+        return name+" "+lastName;
     }
 }
 

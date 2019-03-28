@@ -67,7 +67,7 @@ public class AdminServiceImpl implements AdminService {
 
         for (int i = 0; i < userList.size(); i++) {
             User u = userList.get(i);
-            Role role = roleRepository.findByRole("ROLE_USER");
+            Role role = roleRepository.findByRole("ROLE_ADMIN");
             u.setRoles(new HashSet<Role>(Arrays.asList(role)));
             u.setPassword(bCryptPasswordEncoder.encode(u.getPassword()));
             em.persist(u);
@@ -80,7 +80,7 @@ public class AdminServiceImpl implements AdminService {
     }
     public void saveAll(List<User> userList) {
         for (int i = 0; i < userList.size(); i++) {
-            Role role = roleRepository.findByRole("ROLE_USER");
+            Role role = roleRepository.findByRole("ROLE_ADMIN");
             userList.get(i).setRoles(new HashSet<Role>(Arrays.asList(role)));
             userList.get(i).setPassword(bCryptPasswordEncoder.encode(userList.get(i).getPassword()));
         }

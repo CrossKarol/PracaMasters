@@ -5,10 +5,10 @@
 			<sec:authorize access="hasRole('ROLE_ADMIN')">
 				<a class="marginLeft" href="/admin"><s:message code="menu.adminPage"/></a>
 				<a class="marginLeft"  href="/admin/users/1"><s:message code="menu.spotted"/></a>
-				<a class="marginLeft"  href="/admin/users/1"><s:message code="menu.news"/></a>
+				<a class="marginLeft"  href="/adminposts"><s:message code="menu.news"/></a>
 			</sec:authorize>
 				<sec:authorize access="hasRole('ROLE_USER')">
-				<a class="marginLeft"  href="/index"><s:message code="menu.news1"/></a>
+				<a class="marginLeft"  href="/userposts"><s:message code="menu.news1"/></a>
 				<a class="marginLeft"  href="/index"><s:message code="menu.prof"/></a>
 				<a class="marginLeft"  href="/index"><s:message code="menu.save"/></a>
 				<a class="marginLeft"  href="/profil"><s:message code="menu.account"/></a>

@@ -8,7 +8,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 </head>
 <body>
 <%@include file="/WEB-INF/incl/menu.app"%>
@@ -16,20 +20,40 @@
         <h2><s:message code="post.posts"/></h2>
 </div>
 
-<table width="1000" border="0" cellpadding="6" cellspacing="0">
 
+<div class="container">
+<c:forEach var="u" items="${postList }">
+	<div class="row">
+		<div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-9">
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <div class="row-picture">
+                                <a href="#" title="sintret">
+                                    <img class="circle img-thumbnail img-box" src="http://sintret.com/img/andy.jpg" alt="sintret">
+                                </a>
+                            </div>
+                            <div class="row-content">
+                                <div class="list-group-item-heading">
+                                    <a>
+                                        <small><c:out value="${u.author }"/></small>
+                                    </a>
+                                </div>
+                                <small>
+                                    <i class="glyphicon glyphicon-time"></i> <c:out value="${u.createdOn }"/>
+                                    <br>
+                                    <span class="explore"><i class="glyphicon glyphicon-th"></i> <a href="#">Explore 2 places </a></span>
+                                </small>
+                            </div>
+                            <h4><a href="#"><c:out value="${u.title }"/></a></h4>
+                            <p><c:out value="${u.content }"/></p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</c:forEach>
+</div>
 
-        <c:forEach var="u" items="${postList }">
-        <c:set var="licznik" value="${licznik+1}"/>
-            <tr onmouseover="changeTrBg(this)" onmouseout="defaultTrBg(this)">
-
-                <td align="lest"><c:out value="${u.author }"/></td>
-                <td align="left"><c:out value="${u.title }"/></td>
-                <td align="left"><c:out value="${u.content }"/></td>
-                <td align="center"><c:out value="${u.createdOn }"/></td>
-
-            </tr>
-        </c:forEach>
-    </table>
 </body>
 </html>

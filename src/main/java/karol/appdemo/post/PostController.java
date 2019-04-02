@@ -30,6 +30,8 @@ public class PostController {
     public String postForm(Model model) {
         Post u = new Post();
         model.addAttribute("post", u);
+        List<Post> postList = postService.findAll();
+        model.addAttribute("postList", postList);
         return "adminposts";
     }
 

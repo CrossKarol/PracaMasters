@@ -35,6 +35,7 @@ function startSearch(){
 <body>
 <%@include file="/WEB-INF/incl/menu.app"%>
 <h1><s:message code="menu.users"/></h1>
+
 <c:set var="licznik" value="${recordStartCounter }"/>
 <div align="center">
         <div align="right" style="width: 1000px; padding: 2px;">
@@ -78,6 +79,9 @@ function startSearch(){
                 <c:choose>
                     <c:when test ="${u.nrRoli == 1 }">
                             <font color ="green"><s:message code="word.admin"/></font>
+                    </c:when>
+                    <c:when test ="${u.nrRoli == 3 }">
+                            <font color ="red"><s:message code="word.profesor"/></font>
                     </c:when>
                     <c:otherwise>
                             <s:message code="word.user"/>

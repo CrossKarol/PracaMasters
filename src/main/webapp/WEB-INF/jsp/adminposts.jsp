@@ -10,7 +10,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
 <title><s:message code="menu.register"/></title>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
+
+
 <body>
 <%@include file="/WEB-INF/incl/menu.app" %>
 
@@ -20,34 +26,79 @@
 		<c:out value="${message }" />
 </p>
 
-	<sf:form id="postsForm" action="addpost" modelAttribute="post"
-		enctype="multipart/form-data" method="POST">
+<div class="container">
+	<div class="row">
 
-		<table width="500" border="0" cellpadding="4" cellspacing="1"
-			align="center">
+	    <div class="col-md-8 col-md-offset-2">
 
-			<tr>
-				<td width="130" align="right" ><s:message code="post.title"/></td>
-				<td width="270" align="left"><sf:input path="title"
-						size="28" id="title" /></td>
-			</tr>
+    		<h1>Create post</h1>
 
-			<tr>
-				<td width="130" align="right"><s:message code="post.Content"/></td>
-				<td width="270" align="left"><sf:input size="28" path="content"
-						 /></td>
-			</tr>
+    		<form id="postsForm" action="addpost" modelAttribute="post"
+                  		enctype="multipart/form-data" method="POST">
 
-			<tr>
-				<td colspan="2" align="center" bgcolor="#fff">
-					<input type="submit" value="<s:message code="post.button.added"/>" class="formbutton"/>
-					<input type="button" value="<s:message code="post.button.cancel"/>" class="formbutton"
-						onclick="window.location.href='${pageContext.request.contextPath}/'"/>
-				</td>
-			</tr>
 
-		</table>
-	</sf:form>
+    		    <div class="form-group">
+    		        <label for="title">Title <span class="require">*</span></label>
+    		        <input type="text" class="form-control" name="title" />
+    		    </div>
+
+    		    <div class="form-group">
+    		        <label for="description">Description</label>
+    		        <textarea rows="5" class="form-control" name="content" ></textarea>
+    		    </div>
+
+    		    <div class="form-group">
+    		        <p><span class="require">*</span> - required fields</p>
+    		    </div>
+
+    		    <div class="form-group">
+    		        <button type="submit" class="btn btn-primary">
+    		            Create
+    		        </button>
+    		        <button class="btn btn-default">
+    		            Cancel
+    		        </button>
+    		    </div>
+
+    		</form>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+<c:forEach var="u" items="${postList }">
+	<div class="row">
+		<div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-9">
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <div class="row-picture">
+                                <a href="#" title="sintret">
+                                    <img class="circle img-thumbnail img-box" src="http://sintret.com/img/andy.jpg" alt="sintret">
+                                </a>
+                            </div>
+                            <div class="row-content">
+                                <div class="list-group-item-heading">
+                                    <a>
+                                        <small><c:out value="${u.author }"/></small>
+                                    </a>
+                                </div>
+                                <small>
+                                    <i class="glyphicon glyphicon-time"></i> <c:out value="${u.createdOn }"/>
+                                    <br>
+                                    <span class="explore"><i class="glyphicon glyphicon-th"></i> <a href="#">Explore 2 places </a></span>
+                                </small>
+                            </div>
+                            <h4><a href="#"><c:out value="${u.title }"/></a></h4>
+                            <p><c:out value="${u.content }"/></p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</c:forEach>
+</div>
 
 
 </body>

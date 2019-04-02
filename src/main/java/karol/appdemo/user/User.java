@@ -1,5 +1,7 @@
 package karol.appdemo.user;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Set;
@@ -37,9 +39,6 @@ public class User {
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
-    @Transient          //adnotacja ozncza że przy wszelkiego rodzaju insert, update to pole będzie omijane
-    private String operacja;
-    //  stworzenie składowej której nie mamy w bazie, hibernate nie bierze jej pod uwagę
     @Transient
     private int nrRoli;
 
@@ -48,6 +47,65 @@ public class User {
 
     @Column(name = "activation_code")
     private String activationCode;
+
+
+
+    // pola stworzone dla profesora
+    @Column(name = "konsultacje")
+    @NotNull
+    private String konsultacje;
+
+    @Column(name = "phone")
+    @NotNull
+    private String phone;
+
+    @Column(name = "title_prof")
+    @NotNull
+    private String titleP;
+
+    @Column(name = "my_page")
+    @NotNull
+    private String myPage;
+
+    @Column(name = "info_student")
+    @NotNull
+    private String infoStudent;
+
+    @Column(name = "room")
+    @NotNull
+    private String room;
+
+    //pola stworzone dla usera
+    @Column(name = "kierunek")
+    @NotNull
+    private String kierunek;
+
+    @Column(name = "group_lab")
+    @NotNull
+    private String groupLab;
+
+
+
+
+    // add photo img
+    @Transient
+    private MultipartFile photo;
+
+    @Lob
+    @Column(name = "data")
+    private byte[] data;
+
+    @Column(name = "file_name")
+    @NotNull
+    private String fileName;
+
+    @Column(name = "file_type")
+    @NotNull
+    private String fileType;
+
+
+
+
 
     // Gettery i settery
     public int getId() {
@@ -114,14 +172,6 @@ public class User {
         this.nrRoli = nrRoli;
     }
 
-    public String getOperacja() {
-        return operacja;
-    }
-
-    public void setOperacja(String operacja) {
-        this.operacja = operacja;
-    }
-
     public String getNewPassword() {
         return newPassword;
     }
@@ -136,6 +186,102 @@ public class User {
 
     public void setActivationCode(String activationCode) {
         this.activationCode = activationCode;
+    }
+
+    public String getKonsultacje() {
+        return konsultacje;
+    }
+
+    public void setKonsultacje(String konsultacje) {
+        this.konsultacje = konsultacje;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getTitleP() {
+        return titleP;
+    }
+
+    public void setTitleP(String titleP) {
+        this.titleP = titleP;
+    }
+
+    public String getMyPage() {
+        return myPage;
+    }
+
+    public void setMyPage(String myPage) {
+        this.myPage = myPage;
+    }
+
+    public String getInfoStudent() {
+        return infoStudent;
+    }
+
+    public void setInfoStudent(String infoStudent) {
+        this.infoStudent = infoStudent;
+    }
+
+    public String getRoom() {
+        return room;
+    }
+
+    public void setRoom(String room) {
+        this.room = room;
+    }
+
+    public String getKierunek() {
+        return kierunek;
+    }
+
+    public void setKierunek(String kierunek) {
+        this.kierunek = kierunek;
+    }
+
+    public String getGroupLab() {
+        return groupLab;
+    }
+
+    public void setGroupLab(String groupLab) {
+        this.groupLab = groupLab;
+    }
+
+    public MultipartFile getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(MultipartFile photo) {
+        this.photo = photo;
+    }
+
+    public byte[] getData() {
+        return data;
+    }
+
+    public void setData(byte[] data) {
+        this.data = data;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public String getFileType() {
+        return fileType;
+    }
+
+    public void setFileType(String fileType) {
+        this.fileType = fileType;
     }
 
     @Override

@@ -166,10 +166,11 @@ public class AdminPageController {
         Map<Integer, String> roleMap = new HashMap<Integer, String>();
         roleMap.put(1, messageSource.getMessage("word.admin", null, locale));
         roleMap.put(2, messageSource.getMessage("word.user", null, locale));
+        roleMap.put(3, messageSource.getMessage("word.profesor", null, locale));
         return roleMap;
     }
 
-    // przygotowanie may aktywny/nieaktywny
+    // przygotowanie map aktywny/nieaktywny
     public Map<Integer, String> prepareActivityMap() {
         Locale locale = Locale.getDefault();
         Map<Integer, String> activityMap = new HashMap<Integer, String>();

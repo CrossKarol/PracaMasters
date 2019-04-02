@@ -1,6 +1,7 @@
 package karol.appdemo.user;
 
 
+import karol.appdemo.admin.AdminPageController;
 import karol.appdemo.emailSender.EmailSender;
 import karol.appdemo.utilities.AppdemoUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,9 @@ import validators.UserRegisterValidator;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 
 @Controller
 public class RegisterController {
@@ -32,8 +35,12 @@ public class RegisterController {
     @GET
     @RequestMapping(value = "/register")
     public String registerForm(Model model) {
+
         User u = new User();
+        Map<Integer, String> roleMap = new HashMap<Integer, String>();
+        roleMap = prepareRoleMap();
         model.addAttribute("user", u);
+        model.addAttribute("roleMap", roleMap);
         return "register";
     }
 
@@ -86,4 +93,15 @@ public class RegisterController {
 
         return "index";
     }
+
+    // przygotowanie mapy ról
+    public Map<Integer, String> prepareRoleMap() {
+        Locale locale = Locale.getDefault();
+        Map<Integer, String> roleMap = new HashMap<Integer, String>();
+        roleMap.put(1, messageSource.getMessage("word.profesor", null, locale));
+        roleMap.put(2, messageSource.getMessage("word.user", null, locale));
+
+        return roleMap;
+    }
+
 }

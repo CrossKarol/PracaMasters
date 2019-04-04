@@ -54,7 +54,11 @@
                     <sf:hidden path="id"/>
 
                 <div class="span2">
-                  <img src="http://thetransformedmale.files.wordpress.com/2011/06/bruce-wayne-armani.jpg"  alt="" class="img-rounded">
+                    <img src="data:image/jpeg;base64,${image}"  alt="..." class="img-rounded">
+                    <div class="file btn btn-lg btn-primary">
+                      <s:message code="profil.changePhoto" />
+                        <sf:input type="file" id="photo" path="photo" name="photo"/>
+                    </div>
                 </div>
                 <div class="span4">
                   <blockquote>

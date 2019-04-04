@@ -38,4 +38,12 @@ public interface UserRepository extends JpaRepository<User, Integer> {
                                   @Param("newPhone") String newPhone, @Param("newTitleP") String newTitleP,
                                   @Param("newMyPage") String newMyPage, @Param("newInfoStudent") String newInfoStudent,
                                   @Param("newRoom") String newRoom, @Param("id") Integer id);
+
+
+
+
+    @Modifying
+    @Query("UPDATE User u SET u.fileName = :newFileName, u.fileType = :newFileType, u.data = :newData WHERE u.id= :id")
+    public void updatePhoto(@Param("newFileName") String newFileName, @Param("newFileType") String newFileType,
+                                         @Param("newData") byte[] newData, @Param("id") Integer id);
 }

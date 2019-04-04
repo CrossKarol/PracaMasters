@@ -11,6 +11,8 @@ import javax.transaction.Transactional;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.HashSet;
 
@@ -55,7 +57,17 @@ public class UserServiceImpl implements UserService {
         user.setGroupLab("Grupa Laboratoryjna");
         user.setFileName("Nazwa pliku zdjęcia");
         user.setFileType("Typ pliku zdjęcia");
-
+        user.setFileName("photo.jpg");
+        user.setFileType("image/jpg");
+        Path path = Paths.get(System.getProperty("user.dir")+"\\src\\main\\resources\\static\\images\\photo.jpg");
+        byte[] content = null;
+        try {
+            content = Files.readAllBytes(path);
+            user.setData(content);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         Integer actualRola = user.getNrRoli();
         String nowRola = null;
         if(actualRola == 2)
@@ -86,6 +98,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public void updateProfProfile(String newName, String newLastName, String newEmail, String newKonsultacje, String newPhone, String newTitleP, String newMyPage, String newInfoStudent, String newRoom, int id) {
         userRepository.updateProfProfile(newName, newLastName, newEmail, newKonsultacje, newPhone, newTitleP, newMyPage, newInfoStudent, newRoom, id);
+    }
+
+    @Override
+    public void updatePhoto(String newFileName, String newFileType, byte[] newData, int id) {
+        userRepository.updatePhoto(newFileName, newFileType, newData, id);
     }
 
 

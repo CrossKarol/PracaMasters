@@ -49,7 +49,7 @@
     <div class="container">
         <div class="row">
             <div class="span2">
-              <img src="http://thetransformedmale.files.wordpress.com/2011/06/bruce-wayne-armani.jpg"  alt="" class="img-rounded">
+                <img src="data:image/jpeg;base64,${image}"  alt="..." class="img-rounded">
             </div>
             <div class="span4">
               <blockquote>

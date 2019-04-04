@@ -3,6 +3,9 @@ package karol.appdemo.user;
 
 import karol.appdemo.post.Post;
 import karol.appdemo.utilities.UserUtilities;
+import org.apache.tomcat.util.codec.binary.Base64;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.data.domain.Page;
@@ -17,11 +20,15 @@ import validators.EditUserProfileValidator;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
 @Controller
 public class ProfilController {
+
+    private static final Logger LOG = LoggerFactory.getLogger(ProfilController.class);
 
     @Autowired
     private UserService userService;
@@ -40,6 +47,10 @@ public class ProfilController {
         User user = userService.findUserByEmail(username);
         int nrRoli = user.getRoles().iterator().next().getId();
         user.setNrRoli(nrRoli);
+        byte[] encoded=Base64.encodeBase64(user.getData());
+        String encodedString = new String(encoded);
+        model.addAttribute("image", encodedString);
+
         model.addAttribute("user", user);
         return "profilusers";
     }
@@ -51,6 +62,9 @@ public class ProfilController {
         User user = userService.findUserByEmail(username);
         int nrRoli = user.getRoles().iterator().next().getId();
         user.setNrRoli(nrRoli);
+        byte[] encoded=Base64.encodeBase64(user.getData());
+        String encodedString = new String(encoded);
+        model.addAttribute("image", encodedString);
         model.addAttribute("user", user);
         return "profilprof";
     }
@@ -86,6 +100,9 @@ public class ProfilController {
     public String changeUserData(Model model) {
         String username = UserUtilities.getLoggedUser();
         User user = userService.findUserByEmail(username);
+        byte[] encoded=Base64.encodeBase64(user.getData());
+        String encodedString = new String(encoded);
+        model.addAttribute("image", encodedString);
         model.addAttribute("user", user);
         return "editprofilusers";
     }
@@ -94,6 +111,9 @@ public class ProfilController {
     public String changeProfData(Model model) {
         String username = UserUtilities.getLoggedUser();
         User user = userService.findUserByEmail(username);
+        byte[] encoded=Base64.encodeBase64(user.getData());
+        String encodedString = new String(encoded);
+        model.addAttribute("image", encodedString);
         model.addAttribute("user", user);
         return "editprofilprof";
     }
@@ -102,12 +122,26 @@ public class ProfilController {
     @GET
     @RequestMapping(value = "/updateprofilusers")
     public String changeUserDataAction(User user, BindingResult result, Model model, Locale locale) {
+        LOG.info("**** WYWOŁANO > updateprofiluser()");
+        user.setFileName(user.getPhoto().getOriginalFilename());
+        try {
+            user.setData(user.getPhoto().getBytes());
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        user.setFileType(user.getPhoto().getContentType());
+        LOG.info(user.getData().toString());
+        LOG.info(user.getFileName());
+        LOG.info(user.getFileType());
+
         String returnPage = null;
         new EditUserProfileValidator().validate(user, result);
         if(result.hasErrors()) {
             returnPage = "editprofilusers";
         }else {
             userService.updateUserProfile(user.getName(), user.getLastName(), user.getEmail(), user.getKierunek(), user.getGroupLab(), user.getId());
+            userService.updatePhoto(user.getFileName(),user.getFileType(),user.getData(),user.getId());
             model.addAttribute("message", messageSource.getMessage("profilEdit.success", null, locale));
             returnPage = "afteredit";
         }
@@ -117,12 +151,25 @@ public class ProfilController {
     @GET
     @RequestMapping(value = "/updateprofilprof")
     public String changeProfDataAction(User user, BindingResult result, Model model, Locale locale) {
+        LOG.info("**** WYWOŁANO > updateprofiluser()");
+        user.setFileName(user.getPhoto().getOriginalFilename());
+        try {
+            user.setData(user.getPhoto().getBytes());
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        user.setFileType(user.getPhoto().getContentType());
+        LOG.info(user.getData().toString());
+        LOG.info(user.getFileName());
+        LOG.info(user.getFileType());
         String returnPage = null;
         new EditUserProfileValidator().validate(user, result);
         if(result.hasErrors()) {
             returnPage = "updateprofilprof";
         }else {
             userService.updateProfProfile(user.getName(), user.getLastName(), user.getEmail(), user.getKonsultacje(), user.getPhone(), user.getTitleP(), user.getMyPage(), user.getInfoStudent(), user.getRoom(), user.getId());
+            userService.updatePhoto(user.getFileName(),user.getFileType(),user.getData(),user.getId());
             model.addAttribute("message", messageSource.getMessage("profilEdit.success", null, locale));
             returnPage = "afteredit";
         }
@@ -134,8 +181,17 @@ public class ProfilController {
     @RequestMapping(value = "/listprofesor")
     public String openListAllProf(Model model) {
 
+        List<User> tmpListProf = new ArrayList<>();
+
         List<User> userList = userRepository.findAll();
-        model.addAttribute("userList", userList);
+        for(int i = 0; i < userList.size(); i++)
+        {
+            if(userList.get(i).getRoles().iterator().next().getRole().equals("ROLE_PROFESOR"))
+            {
+                tmpListProf.add(userList.get(i));
+            }
+        }
+        model.addAttribute("userList", tmpListProf);
         return "listprofesor";
     }
 }

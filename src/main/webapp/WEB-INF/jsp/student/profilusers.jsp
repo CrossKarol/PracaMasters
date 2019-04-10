@@ -67,13 +67,15 @@
                                               </c:otherwise>
                                           </c:choose> <br>
                 <i class="icon-gift"></i> <c:out value="${user.kierunek}"/> <br>
-                <i class="icon-globe"></i> <c:out value="${user.groupLab}"/>
+                <i class="icon-globe"></i> <c:out value="${user.groupLab}"/> <br>
+                <i class="icon-gift"></i> <c:out value="${user.specjalizacja}"/> <br>
+                <i class="icon-globe"></i> <c:out value="${user.wydzial}"/> <br>
               </p>
             </div>
 
             <div>
                 <div class="container-login100-form-btn">
-                    <button class="login100-form-btn" onclick="window.location.href='${pageContext.request.contextPath}/editprofilusers'">
+                    <button class="login100-form-btn" onclick="window.location.href='${pageContext.request.contextPath}/student/editprofilusers'">
                         Edytuj Profil
                     </button>
                 </div>

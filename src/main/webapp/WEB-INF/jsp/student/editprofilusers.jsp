@@ -56,7 +56,6 @@
                 <div class="span2">
                     <img src="data:image/jpeg;base64,${image}"  alt="..." class="img-rounded">
                     <div class="file btn btn-lg btn-primary">
-                      <s:message code="profil.changePhoto" />
                         <sf:input type="file" id="photo" path="photo" name="photo"/>
                     </div>
                 </div>
@@ -75,8 +74,26 @@
                                                       <s:message code="word.nie"/>
                                                   </c:otherwise>
                                               </c:choose> <br>
-                    <i class="icon-gift"></i> <sf:input path="kierunek" size="28" id="name" /><br>
-                    <i class="icon-gift"></i> <sf:input path="groupLab" size="28" id="name" /><br>
+                    <i class="icon-gift"></i> <select name="wydzial">
+                                                  <c:forEach var="u" items="${departmentString }">
+                                                    <option>${u}</option>
+                                                  </c:forEach>
+                                              </select><br>
+                    <i class="icon-gift"></i> <select name="kierunek">
+                                                    <c:forEach var="u" items="${studyOfFieldString }">
+                                                      <option>${u}</option>
+                                                    </c:forEach>
+                                               </select><br>
+                    <i class="icon-gift"></i> <select name="groupLab">
+                                                    <c:forEach var="u" items="${deanGroupList }">
+                                                      <option>${u.group}</option>
+                                                    </c:forEach>
+                                               </select><br>
+                    <i class="icon-gift"></i> <select name="specjalizacja">
+                                                    <c:forEach var="u" items="${specializationString }">
+                                                      <option>${u}</option>
+                                                    </c:forEach>
+                                               </select><br>
                   </p>
                 </div>
                     <div>

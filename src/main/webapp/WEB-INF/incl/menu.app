@@ -18,28 +18,30 @@
 				<sec:authorize access="hasRole('ROLE_ADMIN')">
 					<li><a href="/admin/users/1"><s:message code="menu.adminPage"/></a></li>
 					<li><a href="/index"><s:message code="menu.spotted"/></a></li>
-					<li><a href="/adminposts"><s:message code="menu.news"/></a></li>
-					<li><a href="/index"><s:message code="menu.group"/></a></li>
+					<li><a href="/profesor/adminposts"><s:message code="menu.news"/></a></li>
+					<li><a href="/admin/deangroup/1"><s:message code="menu.group"/></a></li>
+					<li class="marginLeft"><a href="/student/profilusers"><s:message code="menu.profil"/></a></li>
 				</sec:authorize>
 				<sec:authorize access="hasRole('ROLE_USER')">
-					<li><a href="/userposts"><s:message code="menu.news1"/></a></li>
-					<li><a href="/listprofesor"><s:message code="menu.prof"/></a></li>
-					<li><a href="/index"><s:message code="menu.save"/></a></li>
-					<li><a href="/profilusers"><s:message code="menu.account"/></a></li>
+					<li><a href="/student/userposts"><s:message code="menu.news1"/></a></li>
+					<li><a href="/student/listprofesor"><s:message code="menu.prof"/></a></li>
+					<li><a href="/student/saveconsultations"><s:message code="menu.save"/></a></li>
+					<li><a href="/student/myconsultations"><s:message code="menu.myconsultations"/></a></li>
 					<li><a href="/index"><s:message code="menu.spotted1"/></a></li>
+					<li class="marginLeft"><a href="/student/profilusers"><s:message code="menu.profil"/></a></li>
 				</sec:authorize>
 				<sec:authorize access="hasRole('ROLE_PROFESOR')">
-					<li><a href="/profilprof"><s:message code="menu.konto"/></a></li>
+					<li><a href="/profesor/profilprof"><s:message code="menu.konto"/></a></li>
 					<li><a href="/index"><s:message code="menu.konsmanage"/></a></li>
-					<li><a href="/adminposts"><s:message code="menu.aktualno"/></a></li>
+					<li><a href="/profesor/adminposts"><s:message code="menu.aktualno"/></a></li>
 					<li><a href="/index"><s:message code="menu.spotted2"/></a></li>
+					<li class="marginLeft"><a href="/profesor/profilprof"><s:message code="menu.profil"/></a></li>
 				</sec:authorize>
 				<sec:authorize access="hasRole('ANONYMOUS')">
 					<li class="marginLeft"><a href="/login"><s:message code="menu.login"/></a></li>
 					<li class="marginLeft"><a href="/register"><s:message code="menu.register"/></a></li>
 				</sec:authorize>
 				<sec:authorize access="isAuthenticated()">
-          <li class="marginLeft"><a href="/profilusers"><s:message code="menu.profil"/></a></li>
           <li class="marginLeft"><a href="/logout"><s:message code="menu.logout"/></a></li>
 				</sec:authorize>
 	</ul>

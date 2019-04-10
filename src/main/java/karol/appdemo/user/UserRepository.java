@@ -20,10 +20,11 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     public void updateUserPassword(@Param("newPassword") String password, @Param("email") String email);
 
     @Modifying
-    @Query("UPDATE User u SET u.name = :newName, u.lastName = :newLastName, u.email = :newEmail, u.kierunek = :newKierunek, u.groupLab = :newGroupLab WHERE u.id= :id")
+    @Query("UPDATE User u SET u.name = :newName, u.lastName = :newLastName, u.email = :newEmail, u.kierunek = :newKierunek, u.groupLab = :newGroupLab, u.specjalizacja = :newSpecjalizacja, u.wydzial = :newWydzial WHERE u.id= :id")
     public void updateUserProfile(@Param("newName") String newName, @Param("newLastName") String newLastName,
                                   @Param("newEmail") String newEmail, @Param("newKierunek") String newKierunek,
-                                  @Param("newGroupLab") String newGroupLab, @Param("id") Integer id);
+                                  @Param("newGroupLab") String newGroupLab,@Param("newSpecjalizacja") String newSpecjalizacja,
+                                  @Param("newWydzial") String newWydzial, @Param("id") Integer id);
 
     @Modifying
     @Query("UPDATE User u SET u.active = :activeParam WHERE u.activationCode = :activationCode")

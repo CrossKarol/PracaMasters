@@ -8,15 +8,12 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.HashSet;
-
-import static java.awt.Event.LOAD_FILE;
 
 @Service("userService")
 @Transactional
@@ -33,19 +30,19 @@ public class UserServiceImpl implements UserService {
 
     //Sprawddza czy istnieje juz taki email
     @Override
-    public User findUserByEmail(String email){
+    public User findUserByEmail(String email) {
         return userRepository.findByEmail(email);
     }
 
 
-//    Odbieramy aktualne hasło, szyfrujemy, i ustawiamy acitve
+    //    Odbieramy aktualne hasło, szyfrujemy, i ustawiamy acitve
 //    Odczytujemy id role, findbyrole zwróci id roli, ustawiamy wartość tej roli
 //    Odbiera poszczególne elemnty obiektu user i odpowiednio je zapisuje w kolumnach w danej tablicy
 //    Jest to ogólny zapis Usera
     @Override
-    public void saveUser(User user){
+    public void saveUser(User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-        user.setActive(0);
+        user.setActive(1);
         user.setActivationCode("Kod aktywacyjny");
         user.setKonsultacje("Godziny Konsultacji");
         user.setPhone("Numer telefonu");
@@ -55,11 +52,13 @@ public class UserServiceImpl implements UserService {
         user.setRoom("Numer pokoju");
         user.setKierunek("kierunek Studiów");
         user.setGroupLab("Grupa Laboratoryjna");
+        user.setSpecjalizacja("Specjalizacja studiów");
+        user.setWydzial("Wydział studiów");
         user.setFileName("Nazwa pliku zdjęcia");
         user.setFileType("Typ pliku zdjęcia");
         user.setFileName("photo.jpg");
         user.setFileType("image/jpg");
-        Path path = Paths.get(System.getProperty("user.dir")+"\\src\\main\\resources\\static\\images\\photo.jpg");
+        Path path = Paths.get(System.getProperty("user.dir") + "\\src\\main\\resources\\static\\images\\photo.jpg");
         byte[] content = null;
         try {
             content = Files.readAllBytes(path);
@@ -70,9 +69,9 @@ public class UserServiceImpl implements UserService {
         }
         Integer actualRola = user.getNrRoli();
         String nowRola = null;
-        if(actualRola == 2)
+        if (actualRola == 2)
             nowRola = "ROLE_USER";
-        else if(actualRola == 1)
+        else if (actualRola == 1)
             nowRola = "ROLE_PROFESOR";
         Role role = roleRepository.findByRole(nowRola);
         user.setRoles(new HashSet<Role>(Arrays.asList(role)));
@@ -80,13 +79,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void updateUserPassword(String newPassword, String email){
+    public void updateUserPassword(String newPassword, String email) {
         userRepository.updateUserPassword(bCryptPasswordEncoder.encode(newPassword), email);
     }
 
     @Override
-    public void updateUserProfile(String newName, String newLastName, String newEmail, String newKierunek, String newGroupLab, int id) {
-        userRepository.updateUserProfile(newName, newLastName, newEmail, newKierunek, newGroupLab, id);
+    public void updateUserProfile(String newName, String newLastName, String newEmail, String newKierunek, String newGroupLab, String newSpecjalizacja, String newWydzial, int id) {
+        userRepository.updateUserProfile(newName, newLastName, newEmail, newKierunek, newGroupLab, newSpecjalizacja, newWydzial, id);
     }
 
 

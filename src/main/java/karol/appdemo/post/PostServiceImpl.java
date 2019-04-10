@@ -4,12 +4,11 @@ package karol.appdemo.post;
 import karol.appdemo.user.User;
 import karol.appdemo.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.time.Instant;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 
@@ -30,6 +29,8 @@ public class PostServiceImpl implements PostService {
     @Override
     public void savePost(Post post) {
 
+        Date dNow = new Date( );
+        SimpleDateFormat ft = new SimpleDateFormat ("yyyy.MM.dd  hh:mm:ss a");
         String b = userService.actuallUser();
         User user = userService.findUserByEmail(b);
         String autor = user.toString();
@@ -43,7 +44,7 @@ public class PostServiceImpl implements PostService {
 //        }
 
         post.setAuthor(autor);
-        post.setCreatedOn(Instant.now());
+        post.setCreatedOn(ft.format(dNow));
         postRepository.save(post);
     }
 

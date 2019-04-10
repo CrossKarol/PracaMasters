@@ -7,7 +7,7 @@
 
 <html>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
         	<meta name="viewport" content="width=device-width, initial-scale=1">
         <!--===============================================================================================-->
         	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -29,67 +29,54 @@
         	<link rel="stylesheet" type="text/css" href="/resources/css/util.css">
         	<link rel="stylesheet" type="text/css" href="/resources/css/main.css">
         <!--===============================================================================================-->
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
-    <title><s:message code="profil.userDane"/></title>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 </head>
-
-
-
 <body>
 <%@include file="/WEB-INF/incl/menu.app"%>
-
-<div align="left">
-        <h2><s:message code="profil.userDane"/></h2>
+<div algin="center">
+        <h2><s:message code="menu.profuser"/></h2>
 </div>
 
-<div id="divplus">
-    <div class="container">
-        <div class="row">
-            <div class="span2">
-                <img src="data:image/jpeg;base64,${image}"  alt="..." class="img-rounded">
-            </div>
-            <div class="span4">
-              <blockquote>
-                <p><c:out value="${user.name}"/> <c:out value="${user.lastName}"/></p>
-                <small><cite title="Source Title">Politechnika Łódzka  <i class="icon-map-marker"></i></cite></small>
-              </blockquote>
-              <p>
-                <i class="icon-envelope"></i> <c:out value="${user.email}"/> <br>
-                <i class="icon-globe"></i> Aktywny: <c:choose>
-                                              <c:when test="${user.active == 1 }">
-                                                  <s:message code="word.tak"/>
-                                              </c:when>
-                                              <c:otherwise>
-                                                  <s:message code="word.nie"/>
-                                              </c:otherwise>
-                                          </c:choose> <br>
-                <i class="icon-gift"></i> <c:out value="${user.konsultacje}"/> <br>
-                <i class="icon-globe"></i> <c:out value="${user.phone}"/> <br>
-                <i class="icon-gift"></i> <c:out value="${user.titleP}"/> <br>
-                <i class="icon-globe"></i> <c:out value="${user.myPage}"/> <br>
-                <i class="icon-globe"></i> <c:out value="${user.infoStudent}"/> <br>
-                <i class="icon-gift"></i> <c:out value="${user.room}"/>
-              </p>
-            </div>
 
-            <div>
-                <div class="container-login100-form-btn">
-                    <button class="login100-form-btn" onclick="window.location.href='${pageContext.request.contextPath}/editprofilprof'">
-                        Edytuj Profil
-                    </button>
+<div id="divplus">
+    <c:forEach var="u" items="${userList }">
+
+        <div class="container">
+            <div class="row">
+                <div class="span2">
+                  <img src="data:image/jpeg;base64,${u.image}"  alt="" class="img-rounded">
                 </div>
-                <div class="container-login100-form-btn">
-                    <button class="login100-form-btn" onclick="window.location.href='${pageContext.request.contextPath}/editpassword'">
-                        Edytuj Hasło
-                    </button>
+                <div class="span4">
+                  <blockquote>
+                    <p><c:out value="${u.name}"/> <c:out value="${u.lastName}"/></p>
+                    <small><cite title="Source Title">Politechnika Łódzka  <i class="icon-map-marker"></i></cite></small>
+                  </blockquote>
+                  <p>
+                    <i class="icon-envelope"></i> <c:out value="${u.email}"/> <br>
+                    <i class="icon-globe"></i> Aktywny: <c:choose>
+                                                  <c:when test="${u.active == 1 }">
+                                                      <s:message code="word.tak"/>
+                                                  </c:when>
+                                                  <c:otherwise>
+                                                      <s:message code="word.nie"/>
+                                                  </c:otherwise>
+                                              </c:choose> <br>
+                    <i class="icon-gift"></i> <c:out value="${u.konsultacje}"/> <br>
+                    <i class="icon-globe"></i> <c:out value="${u.phone}"/> <br>
+                    <i class="icon-gift"></i> <c:out value="${u.titleP}"/> <br>
+                    <i class="icon-globe"></i> <c:out value="${u.myPage}"/> <br>
+                    <i class="icon-globe"></i> <c:out value="${u.infoStudent}"/> <br>
+                    <i class="icon-gift"></i> <c:out value="${u.room}"/>
+                  </p>
                 </div>
             </div>
         </div>
-    </div>
+    </c:forEach>
 </div>
+
 
 <!--===============================================================================================-->
 	<script src="/resources/vendor/jquery/jquery-3.2.1.min.js"></script>

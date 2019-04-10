@@ -84,12 +84,24 @@ public class User {
     @NotNull
     private String groupLab;
 
+    @Column(name = "specjalizacja")
+    @NotNull
+    private String specjalizacja;
+
+    @Column(name = "wydzial")
+    @NotNull
+    private String wydzial;
+
 
 
 
     // add photo img
     @Transient
     private MultipartFile photo;
+
+    @Transient
+    private String image;
+
 
     @Lob
     @Column(name = "data")
@@ -282,6 +294,29 @@ public class User {
 
     public void setFileType(String fileType) {
         this.fileType = fileType;
+    }
+
+    public String getSpecjalizacja() {
+        return specjalizacja;
+    }
+
+    public void setSpecjalizacja(String specjalizacja) {
+        this.specjalizacja = specjalizacja;
+    }
+
+    public String getWydzial() {
+        return wydzial;
+    }
+
+    public void setWydzial(String wydzial) {
+        this.wydzial = wydzial;
+    }
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     @Override

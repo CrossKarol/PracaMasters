@@ -1,19 +1,17 @@
 package karol.appdemo.user;
 
 
-import karol.appdemo.post.Post;
+import karol.appdemo.deanGroup.DeanGroup;
+import karol.appdemo.deanGroup.DeanGroupRepository;
 import karol.appdemo.utilities.UserUtilities;
 import org.apache.tomcat.util.codec.binary.Base64;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
-import org.springframework.data.domain.Page;
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import validators.ChangePasswordValidator;
 import validators.EditUserProfileValidator;
@@ -39,40 +37,40 @@ public class ProfilController {
     @Autowired
     private MessageSource messageSource;
 
-    @GET
-    @RequestMapping(value = "/profilusers")
-    public String showUserProfilePage(Model model)
-    {
-        String username = UserUtilities.getLoggedUser();
-        User user = userService.findUserByEmail(username);
-        int nrRoli = user.getRoles().iterator().next().getId();
-        user.setNrRoli(nrRoli);
-        byte[] encoded=Base64.encodeBase64(user.getData());
-        String encodedString = new String(encoded);
-        model.addAttribute("image", encodedString);
+    @Autowired
+    private DeanGroupRepository deanGroupRepository;
 
-        model.addAttribute("user", user);
-        return "profilusers";
-    }
     @GET
-    @RequestMapping(value = "/profilprof")
-    public String showProfProfilePage(Model model)
-    {
+    @RequestMapping(value = "/student/profilusers")
+    public String showUserProfilePage(Model model) {
         String username = UserUtilities.getLoggedUser();
         User user = userService.findUserByEmail(username);
         int nrRoli = user.getRoles().iterator().next().getId();
         user.setNrRoli(nrRoli);
-        byte[] encoded=Base64.encodeBase64(user.getData());
+        byte[] encoded = Base64.encodeBase64(user.getData());
         String encodedString = new String(encoded);
         model.addAttribute("image", encodedString);
         model.addAttribute("user", user);
-        return "profilprof";
+        return "student/profilusers";
+    }
+
+    @GET
+    @RequestMapping(value = "profesor//profilprof")
+    public String showProfProfilePage(Model model) {
+        String username = UserUtilities.getLoggedUser();
+        User user = userService.findUserByEmail(username);
+        int nrRoli = user.getRoles().iterator().next().getId();
+        user.setNrRoli(nrRoli);
+        byte[] encoded = Base64.encodeBase64(user.getData());
+        String encodedString = new String(encoded);
+        model.addAttribute("image", encodedString);
+        model.addAttribute("user", user);
+        return "profesor/profilprof";
     }
 
     @GET
     @RequestMapping(value = "/editpassword")
-    public String editUserPassword(Model model)
-    {
+    public String editUserPassword(Model model) {
         String username = UserUtilities.getLoggedUser();
         User user = userService.findUserByEmail(username);
         model.addAttribute("user", user);
@@ -96,31 +94,88 @@ public class ProfilController {
     }
 
     @GET
-    @RequestMapping(value = "/editprofilusers")
+    @RequestMapping(value = "/student/editprofilusers")
     public String changeUserData(Model model) {
         String username = UserUtilities.getLoggedUser();
         User user = userService.findUserByEmail(username);
-        byte[] encoded=Base64.encodeBase64(user.getData());
+        byte[] encoded = Base64.encodeBase64(user.getData());
         String encodedString = new String(encoded);
         model.addAttribute("image", encodedString);
         model.addAttribute("user", user);
-        return "editprofilusers";
+
+        List<DeanGroup> deanGroupList = deanGroupRepository.findAll();
+
+        List<String> departmentString = new ArrayList<>();
+        List<String> studyOfFieldString = new ArrayList<>();
+        List<String> specializationString = new ArrayList<>();
+
+        departmentString.add(deanGroupList.get(0).getDepartment());
+        studyOfFieldString.add(deanGroupList.get(0).getFieldOfStudy());
+        specializationString.add(deanGroupList.get(0).getSpecialization());
+
+        boolean flag;
+        for (int i = 1; i <
+                deanGroupList.size(); i++) {
+            flag = true;
+
+            for (int c = 0; c < departmentString.size(); c++) {
+                if ((deanGroupList.get(i).getDepartment().equals(departmentString.get(c)))) {
+                    flag = false;
+                }
+
+            }
+            if (flag) {
+                departmentString.add(deanGroupList.get(i).getDepartment());
+            }
+        }
+        for (int i = 1; i < deanGroupList.size(); i++) {
+            flag = true;
+            for (int c = 0; c < studyOfFieldString.size(); c++) {
+                if ((deanGroupList.get(i).getFieldOfStudy().equals(studyOfFieldString.get(c)))) {
+                    flag = false;
+                }
+
+            }
+            if (flag) {
+                studyOfFieldString.add(deanGroupList.get(i).getFieldOfStudy());
+            }
+        }
+        for (int i = 1; i < deanGroupList.size(); i++) {
+            flag = true;
+            for (int c = 0; c < specializationString.size(); c++) {
+                if ((deanGroupList.get(i).getSpecialization().equals(specializationString.get(c)))) {
+                    flag = false;
+                }
+
+            }
+            if (flag) {
+                specializationString.add(deanGroupList.get(i).getSpecialization());
+            }
+        }
+
+        model.addAttribute("departmentString", departmentString);
+        model.addAttribute("studyOfFieldString", studyOfFieldString);
+        model.addAttribute("specializationString", specializationString);
+        model.addAttribute("deanGroupList", deanGroupList);
+        return "student/editprofilusers";
     }
+
     @GET
-    @RequestMapping(value = "/editprofilprof")
+    @RequestMapping(value = "/profesor/editprofilprof")
     public String changeProfData(Model model) {
         String username = UserUtilities.getLoggedUser();
         User user = userService.findUserByEmail(username);
-        byte[] encoded=Base64.encodeBase64(user.getData());
+        byte[] encoded = Base64.encodeBase64(user.getData());
         String encodedString = new String(encoded);
         model.addAttribute("image", encodedString);
         model.addAttribute("user", user);
-        return "editprofilprof";
+
+        return "profesor/editprofilprof";
     }
 
 
     @GET
-    @RequestMapping(value = "/updateprofilusers")
+    @RequestMapping(value = "/student/updateprofilusers")
     public String changeUserDataAction(User user, BindingResult result, Model model, Locale locale) {
         LOG.info("**** WYWOŁANO > updateprofiluser()");
         user.setFileName(user.getPhoto().getOriginalFilename());
@@ -137,11 +192,13 @@ public class ProfilController {
 
         String returnPage = null;
         new EditUserProfileValidator().validate(user, result);
-        if(result.hasErrors()) {
-            returnPage = "editprofilusers";
-        }else {
-            userService.updateUserProfile(user.getName(), user.getLastName(), user.getEmail(), user.getKierunek(), user.getGroupLab(), user.getId());
-            userService.updatePhoto(user.getFileName(),user.getFileType(),user.getData(),user.getId());
+        if (result.hasErrors()) {
+            LOG.info("Tu jesteś debilu: 1");
+            returnPage = "student/editprofilusers";
+        } else {
+            LOG.info("Tu jesteś debilu: 2");
+            userService.updateUserProfile(user.getName(), user.getLastName(), user.getEmail(), user.getKierunek(), user.getGroupLab(), user.getSpecjalizacja(), user.getWydzial(), user.getId());
+            userService.updatePhoto(user.getFileName(), user.getFileType(), user.getData(), user.getId());
             model.addAttribute("message", messageSource.getMessage("profilEdit.success", null, locale));
             returnPage = "afteredit";
         }
@@ -149,7 +206,7 @@ public class ProfilController {
     }
 
     @GET
-    @RequestMapping(value = "/updateprofilprof")
+    @RequestMapping(value = "/profesor/updateprofilprof")
     public String changeProfDataAction(User user, BindingResult result, Model model, Locale locale) {
         LOG.info("**** WYWOŁANO > updateprofiluser()");
         user.setFileName(user.getPhoto().getOriginalFilename());
@@ -165,11 +222,11 @@ public class ProfilController {
         LOG.info(user.getFileType());
         String returnPage = null;
         new EditUserProfileValidator().validate(user, result);
-        if(result.hasErrors()) {
+        if (result.hasErrors()) {
             returnPage = "updateprofilprof";
-        }else {
+        } else {
             userService.updateProfProfile(user.getName(), user.getLastName(), user.getEmail(), user.getKonsultacje(), user.getPhone(), user.getTitleP(), user.getMyPage(), user.getInfoStudent(), user.getRoom(), user.getId());
-            userService.updatePhoto(user.getFileName(),user.getFileType(),user.getData(),user.getId());
+            userService.updatePhoto(user.getFileName(), user.getFileType(), user.getData(), user.getId());
             model.addAttribute("message", messageSource.getMessage("profilEdit.success", null, locale));
             returnPage = "afteredit";
         }
@@ -178,20 +235,23 @@ public class ProfilController {
 
 
     @GET
-    @RequestMapping(value = "/listprofesor")
+    @RequestMapping(value = "/student/listprofesor")
     public String openListAllProf(Model model) {
 
         List<User> tmpListProf = new ArrayList<>();
-
+        byte[] encoded;
         List<User> userList = userRepository.findAll();
-        for(int i = 0; i < userList.size(); i++)
-        {
-            if(userList.get(i).getRoles().iterator().next().getRole().equals("ROLE_PROFESOR"))
-            {
+        for(User u:userList) {
+            encoded = Base64.encodeBase64(u.getData());
+            u.setImage(new String(encoded));
+        }
+
+        for (int i = 0; i < userList.size(); i++) {
+            if (userList.get(i).getRoles().iterator().next().getRole().equals("ROLE_PROFESOR")) {
                 tmpListProf.add(userList.get(i));
             }
         }
         model.addAttribute("userList", tmpListProf);
-        return "listprofesor";
+        return "student/listprofesor";
     }
 }

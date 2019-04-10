@@ -1,11 +1,8 @@
 package karol.appdemo.post;
 
-import karol.appdemo.user.User;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.time.Instant;
-import java.util.Set;
+
 
 
 @Entity
@@ -27,7 +24,7 @@ public class Post {
 
     @Column(name = "create_on")
     @NotNull
-    private Instant createdOn;
+    private String createdOn;
 
     @Column(name = "author")
     @NotNull
@@ -70,14 +67,13 @@ public class Post {
         this.nrPost = nrPost;
     }
 
-    public Instant getCreatedOn() {
+    public String getCreatedOn() {
         return createdOn;
     }
 
-    public void setCreatedOn(Instant createdOn) {
+    public void setCreatedOn(String createdOn) {
         this.createdOn = createdOn;
     }
-
 
     public String getAuthor() {
         return author;

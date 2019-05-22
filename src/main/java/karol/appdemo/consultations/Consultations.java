@@ -38,6 +38,14 @@ public class Consultations {
         @NotNull
         private String to_profesor;
 
+        @Column(name = "akceptation")
+        @NotNull
+        private int akceptation;
+
+        @Column(name = "message_feedback")
+        @NotNull
+        private String messageFeedback;
+
     public int getId() {
         return id;
     }
@@ -92,5 +100,21 @@ public class Consultations {
 
     public void setTo_profesor(String to_profesor) {
         this.to_profesor = to_profesor;
+    }
+
+    public int getAkceptation() {
+        return akceptation;
+    }
+
+    public void setAkceptation(int akceptation) {
+        this.akceptation = akceptation;
+    }
+
+    public String getMessageFeedback() {
+        return messageFeedback;
+    }
+
+    public void setMessageFeedback(String messageFeedback) {
+        this.messageFeedback = messageFeedback;
     }
 }

@@ -49,7 +49,7 @@
     <div class="container">
         <div class="row">
             <div class="span2">
-              <img src="data:image/jpeg;base64,${image}"  alt="..." class="img-rounded">
+              <img src="data:image/jpeg;base64,${image}" width="150" height="225" alt="..." class="img-rounded">
             </div>
             <div class="span4">
               <blockquote>

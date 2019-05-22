@@ -74,8 +74,11 @@
                     <div class="list-group">
                         <div class="list-group-item">
                             <div class="row-picture">
+                                <a href="adminposts/delete/${u.id }">
+                                        <img src="/resources/images/delicon.png" width="16" height="16" title="<s:message code="delete.post"/>"/>
+                                </a>
                                 <a href="#" title="sintret">
-                                    <img class="circle img-thumbnail img-box" src="http://sintret.com/img/andy.jpg" alt="sintret">
+                                    <img src="data:image/jpeg;base64,${u.image}" width="100" height="150" alt="" class="img-rounded">
                                 </a>
                             </div>
                             <div class="row-content">

@@ -2,7 +2,10 @@ package karol.appdemo.post;
 
 
 import karol.appdemo.user.User;
+import karol.appdemo.user.UserRepository;
 import karol.appdemo.user.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +19,7 @@ import java.util.List;
 @Transactional
 public class PostServiceImpl implements PostService {
 
+    private static final Logger LOG = LoggerFactory.getLogger(PostServiceImpl.class);
 
     @Autowired
     private PostRepository postRepository;
@@ -25,6 +29,9 @@ public class PostServiceImpl implements PostService {
 
     @Autowired
     private PostService postService;
+
+    @Autowired
+    private UserRepository userRepository;
 
     @Override
     public void savePost(Post post) {
@@ -36,15 +43,10 @@ public class PostServiceImpl implements PostService {
         String autor = user.toString();
         System.out.println(autor);
 
-//        List<Post> postList = postRepository.findAll();
-//
-//        for(int i = 0; i < postList.size(); i++) {
-//            System.out.println(postList.get(i).getAuthor());
-//            System.out.println(postList.get(i).getContent());
-//        }
 
         post.setAuthor(autor);
         post.setCreatedOn(ft.format(dNow));
+        post.setData(user.getData());
         postRepository.save(post);
     }
 
@@ -52,6 +54,13 @@ public class PostServiceImpl implements PostService {
     public List<Post> findAll() {
         List<Post> postList = postRepository.findAll();
         return postList;
+    }
+
+    @Override
+    public void deletePostById(int id) {
+        LOG.debug("[WYWOŁANIE >>> PostServiceImpl.deletePost > PARAMETR: " + id);
+        postRepository.deletePost(id);
+
     }
 
 }

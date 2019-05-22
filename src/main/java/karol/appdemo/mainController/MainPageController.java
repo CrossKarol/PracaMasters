@@ -17,6 +17,13 @@ public class MainPageController {
     @RequestMapping(value = {"/", "/index"})
     public String showMainPage() {
         LOG.info("**** WYWOŁANO > showMainPage()");
-        return "index";
+        return "/index";
+    }
+
+    @GET
+    @RequestMapping(value = {"/index1"})
+    public String showMainPageIndex1() {
+        LOG.info("**** WYWOŁANO > showMainPage1()");
+        return "/index1";
     }
 }

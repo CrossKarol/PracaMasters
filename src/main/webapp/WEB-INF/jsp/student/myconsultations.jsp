@@ -12,42 +12,113 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="/resources/css/styles.css">
+<link rel="stylesheet" href="/resources/css/style.css">
 
 </head>
 <body>
 <%@include file="/WEB-INF/incl/menu.app"%>
+
 <div algin="center">
-        <h2><s:message code="consultations.my"/></h2>
+        <h2><s:message code="consultations.wait"/></h2>
 </div>
 
 
 <div class="container">
-<c:forEach var="u" items="${consultationsList }">
-	<div class="row">
-		<div class="row">
-                <div class="col-xs-12 col-sm-9 col-md-9">
-                    <div class="list-group">
-                        <div class="list-group-item">
-                            <div class="row-content">
-                                <div class="list-group-item-heading">
-                                    <a>
-                                        <small><c:out value="${u.to_profesor }"/></small>
-                                    </a>
+    <c:forEach var="u" items="${consultationsListStudentZero }">
+        <div class="row">
+            <div class="row">
+                    <div class="col-xs-12 col-sm-9 col-md-9">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <div class="row-content">
+                                    <div class="list-group-item-heading">
+                                        <a>
+                                            <small><c:out value="${u.to_profesor }"/></small>
+                                        </a>
+                                    </div>
+                                    <small>
+                                        <i class="glyphicon glyphicon-time"></i> <c:out value="${u.date }"/> <c:out value="${u.hour }"/>
+                                        <br>
+                                        <span class="explore"><i class="glyphicon glyphicon-th"></i> <a href="#">Explore 2 places </a></span>
+                                    </small>
                                 </div>
-                                <small>
-                                    <i class="glyphicon glyphicon-time"></i> <c:out value="${u.date }"/> <c:out value="${u.hour }"/>
-                                    <br>
-                                    <span class="explore"><i class="glyphicon glyphicon-th"></i> <a href="#">Explore 2 places </a></span>
-                                </small>
+                                <h4><a href="#"><c:out value="${u.topic }"/></a></h4>
+                                <p><c:out value="${u.description }"/></p>
                             </div>
-                            <h4><a href="#"><c:out value="${u.topic }"/></a></h4>
-                            <p><c:out value="${u.description }"/></p>
                         </div>
                     </div>
-                </div>
+            </div>
         </div>
-    </div>
-</c:forEach>
+    </c:forEach>
+</div>
+
+
+<div algin="center">
+        <h2><s:message code="consultations.acceptstudent"/></h2>
+</div>
+
+<div class="container">
+    <c:forEach var="u" items="${consultationsListStudentOne }">
+        <div class="row">
+            <div class="row">
+                    <div class="col-xs-12 col-sm-9 col-md-9">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <div class="row-content">
+                                    <div class="list-group-item-heading">
+                                        <a>
+                                            <small><c:out value="${u.to_profesor }"/></small>
+                                        </a>
+                                    </div>
+                                    <small>
+                                        <i class="glyphicon glyphicon-time"></i> <c:out value="${u.date }"/> <c:out value="${u.hour }"/>
+                                        <br>
+                                        <span class="explore"><i class="glyphicon glyphicon-th"></i> <a href="#">Explore 2 places </a></span>
+                                    </small>
+                                </div>
+                                <h4><a href="#"><c:out value="${u.topic }"/></a></h4>
+                                <p><c:out value="${u.description }"/></p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </c:forEach>
+</div>
+
+<div algin="center">
+        <h2><s:message code="consultations.noacceptstudent"/></h2>
+</div>
+
+<div class="container">
+    <c:forEach var="u" items="${consultationsListStudentTwo }">
+        <div class="row">
+            <div class="row">
+                    <div class="col-xs-12 col-sm-9 col-md-9">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <div class="row-content">
+                                    <div class="list-group-item-heading">
+                                        <a>
+                                            <small><c:out value="${u.to_profesor }"/></small>
+                                        </a>
+                                    </div>
+                                    <small>
+                                        <i class="glyphicon glyphicon-time"></i> <c:out value="${u.date }"/> <c:out value="${u.hour }"/>
+                                        <br>
+                                        <span class="explore"><i class="glyphicon glyphicon-th"></i> <a href="#">Explore 2 places </a></span>
+                                    </small>
+                                </div>
+                                <h4><a href="#"><c:out value="${u.topic }"/></a></h4>
+                                <p><c:out value="${u.description }"/></p>
+                                <div id="messageFeedba"><c:out value="${u.messageFeedback }"/></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </c:forEach>
 </div>
 
 </body>

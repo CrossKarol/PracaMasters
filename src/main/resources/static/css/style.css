@@ -79,3 +79,24 @@ a:hover {
     margin-top: 50px;
     margin-bottom: 150px;
 }
+#buttonsaccept
+{
+    margin-auto:10px;
+
+}
+#accept
+{
+float:left;
+margin-left: 10px;
+}
+#noaccept
+{
+float:left;
+margin-left: 10px;
+}
+
+#messageFeedba
+{
+    background-color: white;
+    color: red;
+}

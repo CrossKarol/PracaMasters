@@ -30,6 +30,14 @@ public class Post {
     @NotNull
     private String author;
 
+    @Lob
+    @Column(name = "data_post")
+    private byte[] data;
+
+
+    @Transient
+    private String image;
+
 
     @Transient
     private int nrPost;
@@ -81,5 +89,21 @@ public class Post {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public byte[] getData() {
+        return data;
+    }
+
+    public void setData(byte[] data) {
+        this.data = data;
     }
 }

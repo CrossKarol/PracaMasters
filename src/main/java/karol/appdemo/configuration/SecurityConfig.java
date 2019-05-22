@@ -47,12 +47,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/adduser").permitAll()
                 .antMatchers("/activatelink/**").permitAll()
                 .antMatchers("/admin").hasAuthority("ROLE_ADMIN")
+                .antMatchers("/profesor").hasAuthority("ROLE_PROFESOR")
+                .antMatchers("/student").hasAuthority("ROLE_USER")
                 .anyRequest().authenticated()
                 .and().csrf().disable()
                 .formLogin()
                 .loginPage("/login")
                 .failureUrl("/login?error=true")
-                .defaultSuccessUrl("/").usernameParameter("email")
+                .defaultSuccessUrl("/index1").usernameParameter("email")
                 .passwordParameter("password")
                 .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                 .logoutSuccessUrl("/")
@@ -61,7 +63,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     public void configure(WebSecurity webSec) throws Exception {
         webSec.ignoring()
-                .antMatchers("/resources/**", "/statics/**", "/static/css/**", "/js/**", "/images/**", "/incl/**");
+                .antMatchers("/resources/**", "/statics/**", "/static/css/**", "/static/cssindex/**","/js/**", "/images/**", "/incl/**");
     }
 
 
